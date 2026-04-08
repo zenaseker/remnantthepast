@@ -1,0 +1,664 @@
+{
+  "ID": "0-02",
+  "MapTiles": [
+    {
+      "Row": 0,
+      "Col": 0,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 0,
+      "Col": 1,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 0,
+      "Col": 2,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 0,
+      "Col": 3,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": [
+        {
+          "TargetMapId": "0-01",
+          "TargetMapDoorPos": {
+            "x": 9,
+            "y": 1,
+            "magnitude": 9.055386,
+            "sqrMagnitude": 82
+          },
+          "MapOffest": {
+            "x": -11,
+            "y": 1,
+            "magnitude": 11.0453606,
+            "sqrMagnitude": 122
+          },
+          "Transfer": false
+        }
+      ]
+    },
+    {
+      "Row": 0,
+      "Col": 4,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 0,
+      "Col": 5,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 0,
+      "Col": 6,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 1,
+      "Col": 0,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 1,
+      "Col": 1,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 1,
+      "Col": 2,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 1,
+      "Col": 3,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 1,
+      "Col": 4,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 1,
+      "Col": 5,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 1,
+      "Col": 6,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 2,
+      "Col": 0,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 2,
+      "Col": 1,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 2,
+      "Col": 2,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 2,
+      "Col": 3,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 2,
+      "Col": 4,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 2,
+      "Col": 5,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 2,
+      "Col": 6,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 3,
+      "Col": 0,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 3,
+      "Col": 1,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 3,
+      "Col": 2,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 3,
+      "Col": 3,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 3,
+      "Col": 4,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 3,
+      "Col": 5,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 3,
+      "Col": 6,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 4,
+      "Col": 0,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 4,
+      "Col": 1,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 4,
+      "Col": 2,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 4,
+      "Col": 3,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 4,
+      "Col": 4,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 4,
+      "Col": 5,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 4,
+      "Col": 6,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 5,
+      "Col": 0,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 5,
+      "Col": 1,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 5,
+      "Col": 2,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 5,
+      "Col": 3,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 5,
+      "Col": 4,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 5,
+      "Col": 5,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 5,
+      "Col": 6,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 6,
+      "Col": 0,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 6,
+      "Col": 1,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 6,
+      "Col": 2,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 6,
+      "Col": 3,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 6,
+      "Col": 4,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 6,
+      "Col": 5,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 6,
+      "Col": 6,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 7,
+      "Col": 0,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 7,
+      "Col": 1,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 7,
+      "Col": 2,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 7,
+      "Col": 3,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 7,
+      "Col": 4,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 7,
+      "Col": 5,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 7,
+      "Col": 6,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 8,
+      "Col": 0,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 8,
+      "Col": 1,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 8,
+      "Col": 2,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 8,
+      "Col": 3,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 8,
+      "Col": 4,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 8,
+      "Col": 5,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 8,
+      "Col": 6,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 9,
+      "Col": 0,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 9,
+      "Col": 1,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 9,
+      "Col": 2,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": "Slime",
+      "Doors": null
+    },
+    {
+      "Row": 9,
+      "Col": 3,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 9,
+      "Col": 4,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 9,
+      "Col": 5,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 9,
+      "Col": 6,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 10,
+      "Col": 0,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 10,
+      "Col": 1,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 10,
+      "Col": 2,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 10,
+      "Col": 3,
+      "CanTo": true,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 10,
+      "Col": 4,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 10,
+      "Col": 5,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    },
+    {
+      "Row": 10,
+      "Col": 6,
+      "CanTo": false,
+      "MoveToCost": 0,
+      "Monster": null,
+      "Doors": null
+    }
+  ],
+  "MapRowCount": 11,
+  "MapColCount": 7,
+  "CenterMove": {
+    "x": -6,
+    "y": -3,
+    "magnitude": 6.708204,
+    "sqrMagnitude": 45
+  },
+  "HasStartDoor": false,
+  "BlueDoor": {
+    "x": 0,
+    "y": 4,
+    "magnitude": 4.0,
+    "sqrMagnitude": 16
+  },
+  "HasEndDoor": true,
+  "RedDoor": {
+    "x": 10,
+    "y": 3,
+    "magnitude": 10.4403067,
+    "sqrMagnitude": 109
+  },
+  "mapMinX": -6.5,
+  "mapMaxX": 4.5,
+  "mapMinY": -3.5,
+  "mapMaxY": 3.5
+}

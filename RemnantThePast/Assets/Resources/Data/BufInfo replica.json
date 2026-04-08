@@ -1,0 +1,17 @@
+[
+  {
+    "ID": "DefaultAttackSpeedAdd",
+    "Name": "攻速提升",
+    "Description": "普通攻击消耗的时间减少{0}%。"
+  },
+  {
+    "ID": "DamageAdd",
+    "Name": "攻击力提升",
+    "Description": "攻击力提升{0}%。"
+  },
+  {
+    "ID": "Amiya_skill3",
+    "Name": "奇美拉",
+    "Description": "攻击力提升{0}%，最大生命值增加{0}%，伤害类型变为真实，技能结束时阿米娅强制撤离。"
+  }
+]

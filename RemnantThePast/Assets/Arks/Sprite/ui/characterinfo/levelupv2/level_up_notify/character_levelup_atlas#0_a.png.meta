@@ -1,0 +1,913 @@
+fileFormatVersion: 2
+guid: 5c6cdf1044e7aed459519c034fd29a91
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 612
+        width: 200
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1f9c9ac9812d74191645fa85861a9b
+      internalID: -121885724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_1
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 605
+        width: 198
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f417eb7cd35a674479edc1a8f3df9377
+      internalID: -2039595838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_2
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 651
+        width: 39
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0eadce65818aa541a4db33017fe6680
+      internalID: -790851227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_3
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 612
+        width: 123
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66ef610d29b1c524ebf0d32bead54e0d
+      internalID: 1906929444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 537
+        width: 231
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f4b22e2379c5c4fbce794b18004924
+      internalID: -2121838895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_5
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 540
+        width: 192
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a01a6c18cbc4b244885f7749bd56050
+      internalID: -196485391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_6
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 576
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31a266a8a16b544d950e029ed858ba5
+      internalID: -85320975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_7
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 520
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652006c302e1f2b4dbac21d3df690d8f
+      internalID: -935906462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_8
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 583
+        width: 100
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062c0c98e09bd0b428717a91b8af3229
+      internalID: -434942449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_9
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 537
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f380dee61334845b88eaea11596781
+      internalID: -948969393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_10
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 553
+        width: 104
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e7772603d806af4fb75db551987c627
+      internalID: 1668641708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 184
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246d574e27065194f8b366186adc4f3d
+      internalID: -262493187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_12
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 473
+        width: 186
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9257fc79c11d1418875614ce5af052
+      internalID: 468023027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_13
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 476
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe1ded36f36df540ac877545ba2911c
+      internalID: -184754908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_14
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 520
+        width: 109
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a27b23e2a4fbf479f3ca0badb89098
+      internalID: -1847021461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_15
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 469
+        width: 134
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e9eedd691641e4588c16447664e7b3
+      internalID: 404121294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_16
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 489
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d200f632abbd440924bde4e4adff7c
+      internalID: -829471944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_17
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 469
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866ae8c4048bda5489a33756039d5e80
+      internalID: -1188682752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_18
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 489
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd1d47c58b86434bbe4f5f793b902d7
+      internalID: -604573278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 352
+        width: 229
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af41844fb8f4534e912e1a6fdf53c6e
+      internalID: -543835550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_20
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 440
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387f6e3530e983547b8648fb06d34222
+      internalID: -1712039449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_21
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 370
+        width: 97
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b3a6a8dc098594087f83463bc01fe5
+      internalID: -561660296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_22
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 446
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb11a3394c0956489cd0d84444c6ff0
+      internalID: 785639539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_23
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 408
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2bec80e83e10214681d6329b57eced5
+      internalID: 117296287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_24
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 372
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c77c3eedb6427604580366197c5ad7ad
+      internalID: 347486497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_25
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 557
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301b19503e1b4b5408214b8eafc2189f
+      internalID: 242509214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_26
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 351
+        width: 41
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5516230c04f4864ebab7e0b5ea2ab93
+      internalID: 1899423017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 315
+        width: 463
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d95b40c0f93d9845ba234cf7c2e5fbd
+      internalID: -1332115780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_28
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 316
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceae0f3ce1357284fa69734367fef36f
+      internalID: 1673795879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_30
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 184
+        width: 524
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a1877bbdd5eb44b97e5ce3fc41eb7c
+      internalID: 444929431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_31
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 288
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc82cb0e37ae23f4597ae08b1f470d30
+      internalID: 338467050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_33
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 216
+        width: 79
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a10636084f800488367bf77e067041
+      internalID: -1993787252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_37
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 185
+        width: 132
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72e9feaf2d4deca4191ac4fa386abe80
+      internalID: 1476143927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_39
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 515
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58b72a0427c3f54b92853d6935ae7ef
+      internalID: -1276322088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_40
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 101
+        width: 55
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdef66e1688bc144c99a4a5e280d6b9a
+      internalID: 1420725383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_levelup_atlas#0_a_41
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 0
+        width: 92
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0214020cad8411841b3d87378e12870b
+      internalID: 386790095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      character_levelup_atlas#0_a_0: -121885724
+      character_levelup_atlas#0_a_1: -2039595838
+      character_levelup_atlas#0_a_10: 1668641708
+      character_levelup_atlas#0_a_11: -262493187
+      character_levelup_atlas#0_a_12: 468023027
+      character_levelup_atlas#0_a_13: -184754908
+      character_levelup_atlas#0_a_14: -1847021461
+      character_levelup_atlas#0_a_15: 404121294
+      character_levelup_atlas#0_a_16: -829471944
+      character_levelup_atlas#0_a_17: -1188682752
+      character_levelup_atlas#0_a_18: -604573278
+      character_levelup_atlas#0_a_19: -543835550
+      character_levelup_atlas#0_a_2: -790851227
+      character_levelup_atlas#0_a_20: -1712039449
+      character_levelup_atlas#0_a_21: -561660296
+      character_levelup_atlas#0_a_22: 785639539
+      character_levelup_atlas#0_a_23: 117296287
+      character_levelup_atlas#0_a_24: 347486497
+      character_levelup_atlas#0_a_25: 242509214
+      character_levelup_atlas#0_a_26: 1899423017
+      character_levelup_atlas#0_a_27: -1332115780
+      character_levelup_atlas#0_a_28: 1673795879
+      character_levelup_atlas#0_a_29: -1854330267
+      character_levelup_atlas#0_a_3: 1906929444
+      character_levelup_atlas#0_a_30: 444929431
+      character_levelup_atlas#0_a_31: 338467050
+      character_levelup_atlas#0_a_32: -1855353410
+      character_levelup_atlas#0_a_33: -1993787252
+      character_levelup_atlas#0_a_34: -519958823
+      character_levelup_atlas#0_a_35: -1803416209
+      character_levelup_atlas#0_a_36: 1786712438
+      character_levelup_atlas#0_a_37: 1476143927
+      character_levelup_atlas#0_a_38: 572240170
+      character_levelup_atlas#0_a_39: -1276322088
+      character_levelup_atlas#0_a_4: -2121838895
+      character_levelup_atlas#0_a_40: 1420725383
+      character_levelup_atlas#0_a_41: 386790095
+      character_levelup_atlas#0_a_42: -496114354
+      character_levelup_atlas#0_a_5: -196485391
+      character_levelup_atlas#0_a_6: -85320975
+      character_levelup_atlas#0_a_7: -935906462
+      character_levelup_atlas#0_a_8: -434942449
+      character_levelup_atlas#0_a_9: -948969393
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,146 @@
+[
+  {
+    "ID": "GoPro",
+    "Name": "猎狗",
+    "Description": "整合运动技术侦察部队操纵的生物。身上装备着某个品牌的监控设备。由于优良的隐蔽性和行动速度，较为容易突破防御造成大量破坏，需要注意。 ",
+    "Icon": "enemy_1000_gopro",
+    "MaxHp": 820,
+    "Attack": 275,
+    "WarningRange": [
+      {
+        "x": 1,
+        "y": 1,
+        "magnitude": 1.41421354,
+        "sqrMagnitude": 2
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1
+      },
+      {
+        "x": 1,
+        "y": -1,
+        "magnitude": 1.41421354,
+        "sqrMagnitude": 2
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "magnitude": 0.0,
+        "sqrMagnitude": 0
+      },
+      {
+        "x": 0,
+        "y": -1,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1
+      },
+      {
+        "x": -1,
+        "y": 1,
+        "magnitude": 1.41421354,
+        "sqrMagnitude": 2
+      },
+      {
+        "x": -1,
+        "y": 0,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1
+      },
+      {
+        "x": -1,
+        "y": -1,
+        "magnitude": 1.41421354,
+        "sqrMagnitude": 2
+      }
+    ],
+    "AttackRange": [],
+    "monsterIntentInfos": [
+      {
+        "ID": 0,
+        "Name": "攻击",
+        "Description": "造成攻击力100%的物理伤害。",
+        "time": 0.7,
+        "strength": 0,
+        "icon": "enemy_1000_gopro"
+      },
+      {
+        "ID": 0,
+        "Name": "移动",
+        "Description": "向最近的干员移动1格。",
+        "time": 0.7,
+        "strength": 0,
+        "icon": "enemy_1000_gopro"
+      }
+    ],
+    "Model": "GoPro"
+  },
+  {
+    "ID": "Slime",
+    "Name": "源石虫",
+    "Description": "野生的被感染生物。这种低智能生物极有可能会被敌方术师操纵，以进入人工设施内发动集群攻击。",
+    "Icon": "enemy_1007_slime",
+    "MaxHp": 550,
+    "Attack": 160,
+    "WarningRange": [
+      {
+        "x": 0,
+        "y": 0,
+        "magnitude": 0.0,
+        "sqrMagnitude": 0
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1
+      },
+      {
+        "x": -1,
+        "y": 0,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1
+      },
+      {
+        "x": 0,
+        "y": -1,
+        "magnitude": 1.0,
+        "sqrMagnitude": 1
+      }
+    ],
+    "AttackRange": [],
+    "monsterIntentInfos": [
+      {
+        "ID": 0,
+        "Name": "攻击",
+        "Description": "造成攻击力100%的物理伤害。",
+        "time": 0.6,
+        "strength": 0,
+        "icon": "enemy_1007_slime"
+      },
+      {
+        "ID": 0,
+        "Name": "移动",
+        "Description": "向最近的干员移动1格。",
+        "time": 0.6,
+        "strength": 0,
+        "icon": "enemy_1007_slime"
+      }
+    ],
+    "Model": "Slime"
+  }
+]

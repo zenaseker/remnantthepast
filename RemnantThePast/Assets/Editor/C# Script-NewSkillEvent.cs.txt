@@ -1,0 +1,19 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace SkillComponent
+{
+    public class #SCRIPTNAME# : SkillEvent
+    {
+        public override List<IRoundQueneObject> GetTarget()
+        {
+            List<IRoundQueneObject> targets = new List<IRoundQueneObject>();
+            return targets;
+        }
+
+        public override void Skill(params object[] _target)
+        {
+
+        }
+    }
+}

@@ -1,0 +1,412 @@
+
+Amiya.png
+size: 1988,157
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+F_Belt
+  rotate: true
+  xy: 426, 1
+  size: 16, 78
+  orig: 16, 78
+  offset: 0, 0
+  index: -1
+F_Coat_Back
+  rotate: false
+  xy: 426, 18
+  size: 104, 138
+  orig: 104, 138
+  offset: 0, 0
+  index: -1
+F_Dress_Back
+  rotate: true
+  xy: 1834, 66
+  size: 90, 24
+  orig: 90, 24
+  offset: 0, 0
+  index: -1
+F_Emoticon
+  rotate: true
+  xy: 990, 48
+  size: 108, 78
+  orig: 108, 78
+  offset: 0, 0
+  index: -1
+F_Emoticon_2
+  rotate: true
+  xy: 94, 3
+  size: 10, 9
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+F_Eye
+  rotate: false
+  xy: 631, 3
+  size: 85, 34
+  orig: 86, 34
+  offset: 1, 0
+  index: -1
+F_Eye_2
+  rotate: false
+  xy: 546, 3
+  size: 84, 26
+  orig: 86, 26
+  offset: 2, 0
+  index: -1
+F_Eye_3
+  rotate: false
+  xy: 328, 2
+  size: 79, 13
+  orig: 80, 14
+  offset: 0, 1
+  index: -1
+F_Eyebrow
+  rotate: false
+  xy: 1, 1
+  size: 70, 12
+  orig: 70, 12
+  offset: 0, 0
+  index: -1
+F_Eyebrow_2
+  rotate: true
+  xy: 1859, 84
+  size: 72, 20
+  orig: 72, 20
+  offset: 0, 0
+  index: -1
+F_Eyebrow_3
+  rotate: false
+  xy: 244, 1
+  size: 83, 14
+  orig: 86, 20
+  offset: 0, 0
+  index: -1
+F_Front_Hair_A
+  rotate: true
+  xy: 1520, 58
+  size: 98, 88
+  orig: 98, 88
+  offset: 0, 0
+  index: -1
+F_Front_Hair_B
+  rotate: false
+  xy: 1406, 54
+  size: 52, 102
+  orig: 52, 102
+  offset: 0, 0
+  index: -1
+F_Front_Hair_C
+  rotate: false
+  xy: 687, 40
+  size: 50, 116
+  orig: 50, 116
+  offset: 0, 0
+  index: -1
+F_Head
+  rotate: true
+  xy: 1, 14
+  size: 142, 136
+  orig: 142, 136
+  offset: 0, 0
+  index: -1
+F_Hood
+  rotate: true
+  xy: 624, 38
+  size: 118, 62
+  orig: 118, 62
+  offset: 0, 0
+  index: -1
+F_L_Arm
+  rotate: true
+  xy: 1228, 1
+  size: 50, 58
+  orig: 50, 58
+  offset: 0, 0
+  index: -1
+F_L_Arm_2
+  rotate: false
+  xy: 1736, 3
+  size: 48, 54
+  orig: 48, 54
+  offset: 0, 0
+  index: -1
+F_L_Arm_3
+  rotate: true
+  xy: 1459, 56
+  size: 100, 60
+  orig: 100, 60
+  offset: 0, 0
+  index: -1
+F_L_Arm_3_Back
+  rotate: true
+  xy: 505, 1
+  size: 16, 40
+  orig: 16, 40
+  offset: 0, 0
+  index: -1
+F_L_Arm_4
+  rotate: false
+  xy: 1930, 6
+  size: 52, 52
+  orig: 52, 52
+  offset: 0, 0
+  index: -1
+F_L_Arm_5
+  rotate: false
+  xy: 943, 2
+  size: 61, 45
+  orig: 62, 46
+  offset: 1, 0
+  index: -1
+F_L_Calf
+  rotate: false
+  xy: 1069, 50
+  size: 63, 106
+  orig: 64, 106
+  offset: 0, 0
+  index: -1
+F_L_Coat
+  rotate: false
+  xy: 138, 14
+  size: 52, 142
+  orig: 52, 142
+  offset: 0, 0
+  index: -1
+F_L_Coat_2
+  rotate: false
+  xy: 337, 16
+  size: 88, 140
+  orig: 88, 140
+  offset: 0, 0
+  index: -1
+F_L_Collar_2
+  rotate: false
+  xy: 1686, 58
+  size: 64, 98
+  orig: 64, 98
+  offset: 0, 0
+  index: -1
+F_L_Ear
+  rotate: false
+  xy: 1751, 60
+  size: 82, 96
+  orig: 82, 96
+  offset: 0, 0
+  index: -1
+F_L_Foot
+  rotate: false
+  xy: 717, 5
+  size: 60, 34
+  orig: 60, 34
+  offset: 0, 0
+  index: -1
+F_L_Forearm
+  rotate: false
+  xy: 1287, 1
+  size: 58, 50
+  orig: 58, 50
+  offset: 0, 0
+  index: -1
+F_L_Forearm_2
+  rotate: true
+  xy: 1933, 108
+  size: 48, 54
+  orig: 48, 54
+  offset: 0, 0
+  index: -1
+F_L_Forearm_4
+  rotate: false
+  xy: 1575, 3
+  size: 58, 54
+  orig: 58, 54
+  offset: 0, 0
+  index: -1
+F_L_Forearm_5
+  rotate: false
+  xy: 894, 1
+  size: 48, 46
+  orig: 48, 46
+  offset: 0, 0
+  index: -1
+F_L_Hair
+  rotate: false
+  xy: 738, 42
+  size: 58, 114
+  orig: 58, 114
+  offset: 0, 0
+  index: -1
+F_L_Hand
+  rotate: true
+  xy: 1634, 3
+  size: 54, 50
+  orig: 54, 50
+  offset: 0, 0
+  index: -1
+F_L_Hand_2
+  rotate: false
+  xy: 1092, 1
+  size: 56, 48
+  orig: 56, 48
+  offset: 0, 0
+  index: -1
+F_L_Hand_3
+  rotate: true
+  xy: 1346, 2
+  size: 50, 57
+  orig: 52, 58
+  offset: 1, 0
+  index: -1
+F_L_Hand_4
+  rotate: false
+  xy: 1933, 59
+  size: 54, 48
+  orig: 54, 48
+  offset: 0, 0
+  index: -1
+F_L_Hand_5
+  rotate: true
+  xy: 1461, 1
+  size: 54, 64
+  orig: 54, 64
+  offset: 0, 0
+  index: -1
+F_L_Leg
+  rotate: false
+  xy: 1880, 88
+  size: 52, 68
+  orig: 52, 68
+  offset: 0, 0
+  index: -1
+F_Mouth
+  rotate: true
+  xy: 122, 6
+  size: 7, 4
+  orig: 8, 4
+  offset: 0, 0
+  index: -1
+F_Mouth_2
+  rotate: false
+  xy: 72, 3
+  size: 21, 10
+  orig: 22, 10
+  offset: 1, 0
+  index: -1
+F_Mouth_3
+  rotate: false
+  xy: 104, 5
+  size: 17, 8
+  orig: 18, 8
+  offset: 0, 0
+  index: -1
+F_Ponytail
+  rotate: true
+  xy: 1133, 52
+  size: 104, 196
+  orig: 104, 196
+  offset: 0, 0
+  index: -1
+F_R_Arm
+  rotate: true
+  xy: 839, 1
+  size: 46, 54
+  orig: 46, 54
+  offset: 0, 0
+  index: -1
+F_R_Calf
+  rotate: false
+  xy: 1330, 53
+  size: 75, 103
+  orig: 76, 108
+  offset: 1, 5
+  index: -1
+F_R_Coat
+  rotate: false
+  xy: 244, 16
+  size: 92, 140
+  orig: 92, 140
+  offset: 0, 0
+  index: -1
+F_R_Coat_2
+  rotate: false
+  xy: 191, 14
+  size: 52, 142
+  orig: 52, 142
+  offset: 0, 0
+  index: -1
+F_R_Collar
+  rotate: true
+  xy: 1785, 1
+  size: 58, 96
+  orig: 58, 96
+  offset: 0, 0
+  index: -1
+F_R_Collar_2
+  rotate: true
+  xy: 1005, 18
+  size: 29, 86
+  orig: 34, 86
+  offset: 0, 0
+  index: -1
+F_R_Ear
+  rotate: false
+  xy: 1609, 58
+  size: 76, 98
+  orig: 76, 98
+  offset: 0, 0
+  index: -1
+F_R_Foot
+  rotate: false
+  xy: 778, 8
+  size: 60, 33
+  orig: 60, 34
+  offset: 0, 0
+  index: -1
+F_R_Forearm
+  rotate: false
+  xy: 1685, 3
+  size: 50, 54
+  orig: 50, 54
+  offset: 0, 0
+  index: -1
+F_R_Hair
+  rotate: true
+  xy: 797, 48
+  size: 108, 192
+  orig: 108, 192
+  offset: 0, 0
+  index: -1
+F_R_Hand
+  rotate: true
+  xy: 1526, 1
+  size: 56, 48
+  orig: 56, 48
+  offset: 0, 0
+  index: -1
+F_R_Hand_2
+  rotate: false
+  xy: 1882, 40
+  size: 47, 47
+  orig: 47, 47
+  offset: 0, 0
+  index: -1
+F_R_Leg
+  rotate: true
+  xy: 1149, 1
+  size: 50, 78
+  orig: 50, 78
+  offset: 0, 0
+  index: -1
+F_Scarf
+  rotate: false
+  xy: 1404, 2
+  size: 56, 50
+  orig: 56, 50
+  offset: 0, 0
+  index: -1
+F_Waist
+  rotate: false
+  xy: 531, 30
+  size: 92, 126
+  orig: 92, 126
+  offset: 0, 0
+  index: -1

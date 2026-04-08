@@ -1,0 +1,74 @@
+[
+  {
+    "ID": 1,
+    "Name": "阿米娅",
+    "Description": "芝士兔子，她很可爱。",
+    "Rarity": 5,
+    "_Profession": 0,
+    "MaxHp": 680,
+    "IncreaseHp": 10,
+    "StartMagic": 0,
+    "MaxMagic": 120,
+    "IncreaseMagic": 0,
+    "Attack": 509,
+    "IncreaseAttack": 8,
+    "MoveDistance": 3,
+    "Skills": [
+      "DefaultAttack",
+      "PowerSkill_3",
+      "Amiya_skill_2",
+      "Amiya_skill_3"
+    ],
+    "InitialUnLock": true,
+    "Icon": "char_002_amiya",
+    "Model": "Amiya"
+  },
+  {
+    "ID": 2,
+    "Name": "陈",
+    "Description": "赤霄，拔刀！",
+    "Rarity": 6,
+    "_Profession": 7,
+    "MaxHp": 1209,
+    "IncreaseHp": 21,
+    "StartMagic": 40,
+    "MaxMagic": 40,
+    "IncreaseMagic": 0,
+    "Attack": 471,
+    "IncreaseAttack": 9,
+    "MoveDistance": 3,
+    "Skills": [
+      "DefaultAttack_double",
+      "Chen_skill_1",
+      "Chen_skill_2",
+      "Chen_skill_3"
+    ],
+    "InitialUnLock": true,
+    "Icon": "char_010_chen",
+    "Model": "Chen"
+  },
+  {
+    "ID": 3,
+    "Name": "凯尔希",
+    "Description": "牢猫我的牢猫~回来吧~",
+    "Rarity": 6,
+    "_Profession": 1,
+    "MaxHp": 860,
+    "IncreaseHp": 10,
+    "StartMagic": 0,
+    "MaxMagic": 30,
+    "IncreaseMagic": 0,
+    "Attack": 293,
+    "IncreaseAttack": 7,
+    "MoveDistance": 2,
+    "Skills": [
+      "DefaultTreat",
+      "Kalts_skill_1",
+      "Kalts_skill_2",
+      "Kalts_skill_3"
+    ],
+    "InitialUnLock": true,
+    "Icon": "char_003_kalts",
+    "Model": "Kalts"
+  }
+]

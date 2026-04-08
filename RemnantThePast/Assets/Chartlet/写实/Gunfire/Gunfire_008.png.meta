@@ -1,0 +1,303 @@
+fileFormatVersion: 2
+guid: b63356ec228b07e4a9465dd29933ea4c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 926120971385741452
+    second: Gunfire_008_0
+  - first:
+      213: 801403389365767689
+    second: Gunfire_008_0
+  - first:
+      213: -3850115692966789090
+    second: Gunfire_008_1
+  - first:
+      213: -4304849653860544050
+    second: Gunfire_008_2
+  - first:
+      213: 1345282917623492449
+    second: Gunfire_008_3
+  - first:
+      213: 5692866722888536534
+    second: Gunfire_008_4
+  - first:
+      213: 3896184587521476864
+    second: Gunfire_008_5
+  - first:
+      213: -562972508275765121
+    second: Gunfire_008_6
+  - first:
+      213: -7086277666753727291
+    second: Gunfire_008_7
+  - first:
+      213: -4141761344938113354
+    second: Gunfire_008_8
+  - first:
+      213: -654076749008544166
+    second: Gunfire_008_9
+  - first:
+      213: -359151516869943758
+    second: Gunfire_008_10
+  - first:
+      213: -8576057704571601325
+    second: Gunfire_008_11
+  - first:
+      213: -5044409847172893996
+    second: Gunfire_008_12
+  - first:
+      213: 2047341785751727893
+    second: Gunfire_008_13
+  - first:
+      213: -3418646046630464503
+    second: Gunfire_008_14
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 2
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gunfire_008_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1383
+        width: 776
+        height: 646
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ec0f8f2282f1b00800000000000000
+      internalID: 926120971385741452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunfire_008_4
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 1581
+        width: 819
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1d9635f10210f40800000000000000
+      internalID: 5692866722888536534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunfire_008_6
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 794
+        width: 852
+        height: 441
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7099e98c7bef28f0800000000000000
+      internalID: -562972508275765121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunfire_008_7
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 750
+        width: 907
+        height: 526
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c43c5db10c78ad90800000000000000
+      internalID: -7086277666753727291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunfire_008_8
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 138
+        width: 868
+        height: 452
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b6058230028586c0800000000000000
+      internalID: -4141761344938113354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gunfire_008_11
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 106
+        width: 860
+        height: 491
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ef1c1a4f8bbf880800000000000000
+      internalID: -8576057704571601325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Gunfire_008_0: 926120971385741452
+      Gunfire_008_11: -8576057704571601325
+      Gunfire_008_4: 5692866722888536534
+      Gunfire_008_6: -562972508275765121
+      Gunfire_008_7: -7086277666753727291
+      Gunfire_008_8: -4141761344938113354
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
