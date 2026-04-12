@@ -19,7 +19,7 @@ namespace SaveLoad
     public class EquipmentData
     {
         public int id = -1;       // 装备ID
-        public int level = 1;    // 装备等级
+        public int Rarity = 1;    // 装备稀有度
     }
 
     // 角色数据（已解锁）

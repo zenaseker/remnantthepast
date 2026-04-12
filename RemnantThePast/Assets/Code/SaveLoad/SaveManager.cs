@@ -51,7 +51,7 @@ public static class SaveManager
         if (data.progress == null)
             data.progress = new ProgressData();
 
-        if (data.unlockedRoles == null)
+        if (data.unlockedRoles == null || data.unlockedRoles.Count == 0)
         {
             // 确保列表不为null
             data.unlockedRoles = new List<RoleData>

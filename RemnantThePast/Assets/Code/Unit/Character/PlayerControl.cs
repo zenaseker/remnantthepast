@@ -118,15 +118,13 @@ public class PlayerControl : MonoBehaviour
                 }
             }
         }
-        if (MapManager.Instance.GetTile(PreviousGrid).Doors != null)
+        if (MapManager.Instance.GetTile(PreviousGrid).FacilitiesType == MapTile.IFacilities.FacilitiesType.Cross && MapManager.Instance.GetTile(PreviousGrid).Facilities != null)
         {
-            foreach(MapTile.Door door in MapManager.Instance.GetTile(PreviousGrid).Doors)
+            MapTile.Cross door = (MapTile.Cross)MapManager.Instance.GetTile(PreviousGrid).Facilities;
+            if (MapManager.Instance.mapInstances.TryGetValue(door.TargetMapId, out var map))
             {
-                if (MapManager.Instance.mapInstances.TryGetValue(door.TargetMapId, out var map))
-                {
-                    Vector2Int nextPos = door.TargetMapDoorPos + map.WorldToLocalOffest;
-                    reachable.Add(nextPos);
-                }
+                Vector2Int nextPos = door.TargetMapDoorPos + map.WorldToLocalOffest;
+                reachable.Add(nextPos);
             }
         }
         return reachable;
@@ -143,7 +141,7 @@ public class PlayerControl : MonoBehaviour
         character.Hp.ShowUI();
         character.ChangeAttackState(true);
         UIManager.Instance.teamUIContorl.ChangeCharState(character.CharacterInfo.ID, TeamCharUI.StatusType.Playing);
-        Vector2Int mappos = new Vector2Int((int)transform.position.x, (int)transform.position.y) - MapManager.Instance.MainmapInstance.CenterMove;
+        Vector2Int mappos = new Vector2Int((int)transform.position.x, (int)transform.position.y) - MapManager.Instance.MainmapInstance.WorldToLocalOffest;
         MapManager.Instance.MainmapInstance.GetGrid(mappos).UnitInGrid = character;
         MusicManage.Instance.PlayEffect($"voice/btl_snd_1/b_char_set");
         MusicManage.Instance.PlayRamdonEffect($"voice/{character.CharacterInfo.Icon}/CN_023", $"voice/{character.CharacterInfo.Icon}/CN_024");
@@ -158,7 +156,7 @@ public class PlayerControl : MonoBehaviour
         character.ChangeAttackState(false);
         GameApp.Instance.ClearActionByOnce(character);
         UIManager.Instance.teamUIContorl.ChangeCharState(character.CharacterInfo.ID, TeamCharUI.StatusType.NotPlaying);
-        Vector2Int mappos = new Vector2Int((int)transform.position.x, (int)transform.position.y) - MapManager.Instance.MainmapInstance.CenterMove;
+        Vector2Int mappos = new Vector2Int((int)transform.position.x, (int)transform.position.y) - MapManager.Instance.MainmapInstance.WorldToLocalOffest;
         MapManager.Instance.MainmapInstance.GetGrid(mappos).UnitInGrid = null;
     }
     #endregion

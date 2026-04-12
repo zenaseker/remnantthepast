@@ -1,6 +1,7 @@
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
+using UnityEditor;
 using UnityEngine;
 
 /// <summary>
@@ -31,6 +32,11 @@ public class MapInstance
     public float mapMinY { get; set; }//地图视像下边界-Y
     public float mapMaxY { get; set; }//地图视像上边界+Y
     #region Json相关
+    static readonly JsonSerializerSettings settings = new JsonSerializerSettings
+    {
+        TypeNameHandling = TypeNameHandling.Auto,
+        Formatting = Formatting.Indented
+    };
     public static void WriteByJson(MapInstance mapInstance)
     {
         mapInstance.MapTiles = new List<MapTile>();
@@ -41,7 +47,7 @@ public class MapInstance
                 mapInstance.MapTiles.Add(mapInstance.MapGrids[i, j]);
             }
         }
-        string jsonString = JsonConvert.SerializeObject(mapInstance, Formatting.Indented);
+        string jsonString = JsonConvert.SerializeObject(mapInstance, settings);
         string filePath = Application.dataPath + $"/Resources/MapInstance/{mapInstance.ID}.json";
         File.WriteAllText(filePath, jsonString);
         Debug.Log($"地图JSON数据已储存: {filePath}");
@@ -50,7 +56,7 @@ public class MapInstance
     {
         MapInstance mapInstance = new MapInstance();
         TextAsset jsonFile = Resources.Load<TextAsset>($"MapInstance/{path}");
-        mapInstance = JsonConvert.DeserializeObject<MapInstance>(jsonFile.text);
+        mapInstance = JsonConvert.DeserializeObject<MapInstance>(jsonFile.text, settings);
         mapInstance.MapGrids = new MapTile[mapInstance.MapRowCount, mapInstance.MapColCount];
         foreach (MapTile mapTile in mapInstance.MapTiles)
         {
@@ -273,8 +279,8 @@ public class MapTile
     public int Col { get; set; }//纵坐标
     public bool CanTo {get; set;}//允许通行
     public int MoveToCost { get; set; }//进入此节点的代价
-    public string Monster {  get; set; }//本格初始敌人
-    public List<Door> Doors { get; set; }//本格门
+    public IFacilities.FacilitiesType FacilitiesType { get; set; }
+    public IFacilities Facilities { get; set; }//本格设施
     [JsonIgnore]
     public List<IRoundQueneObject> Monsters;//敌人范围索引
     [JsonIgnore]
@@ -316,13 +322,98 @@ public class MapTile
     /// <summary>
     /// 门，地图之间的通道
     /// </summary>
-    public class Door
+    /// 
+    [System.Serializable]
+    public class Cross : IFacilities
     {
         public string TargetMapId { get; set; }//目标地图id
         public Vector2Int TargetMapDoorPos { get; set; }//目标地图目的地坐标
         public Vector2Int MapOffest {  get; set; }//两地图的世界坐标偏移
         public bool Transfer {  get; set; } = false;//是否通过传送到达目的地
 
+        public void Create(Vector2Int pos)
+        {
+
+        }
+
+        public void DrawByEditor()
+        {
+#if UNITY_EDITOR
+            EditorGUILayout.BeginVertical("Box");
+            TargetMapId = EditorGUILayout.TextField("目标地图id", TargetMapId);
+            TargetMapDoorPos = EditorGUILayout.Vector2IntField("目标格坐标", TargetMapDoorPos);
+            MapOffest = EditorGUILayout.Vector2IntField("两地图原点坐标向量", MapOffest);
+            Transfer = EditorGUILayout.Toggle("通过传送抵达", Transfer);
+            GUILayout.EndVertical();
+#endif
+        }
+    }
+    [System.Serializable]
+    public class Monster : IFacilities
+    {
+        public string MonsterID { get; set; }//本格初始敌人
+        public void Create(Vector2Int pos)
+        {
+            Vector3 worldpos = new Vector3(pos.x, pos.y, 0);
+            PoolManage.Instance.GetPoolGameObject("Enemy", "Enemy", worldpos, Quaternion.identity)
+        .GetComponent<EnemyBase>().Init(MonsterID);//加载敌人
+        }
+
+        public void DrawByEditor()
+        {
+#if UNITY_EDITOR
+            EditorGUILayout.BeginVertical("Box");
+            MonsterID = EditorGUILayout.TextField("敌人ID", MonsterID);
+            GUILayout.EndVertical();
+#endif
+        }
+    }
+    public class Door : IFacilities
+    {
+        public bool IsStartDoor { get; set; }
+        public Door(bool isStartDoor)
+        {
+            IsStartDoor = isStartDoor;
+        }
+
+        public void Create(Vector2Int pos)
+        {
+            Vector3 worldpos = new Vector3(pos.x + 0.5f, pos.y, 0);
+            if (IsStartDoor)
+            {
+                GameObject bluedoor = GameObject.Instantiate(Resources.Load<GameObject>("Prefab/Map/BuleDoor"), MapManager.Instance.transform.GetChild(0));
+                bluedoor.transform.localPosition = worldpos;
+                bluedoor.GetComponent<BlueDoor>().OnCreate(pos);
+            }
+            else
+            {
+                GameObject reddoor = GameObject.Instantiate(Resources.Load<GameObject>("Prefab/Map/RedDoor"), MapManager.Instance.transform.GetChild(0));
+                reddoor.transform.localPosition = worldpos;
+                reddoor.GetComponent<RedDoor>().OnCreate(pos);
+            }
+        }
+
+        public void DrawByEditor()
+        {
+#if UNITY_EDITOR
+            EditorGUILayout.HelpBox("这是一个" + (IsStartDoor ? "蓝门" : "红门"), MessageType.Info);
+#endif
+        }
+    }
+    public interface IFacilities
+    {
+        public enum FacilitiesType
+        {
+            None,
+            Monster,
+            Cross,
+            StartDoor,
+            EndDoor,
+            Event,
+            Rest
+        }
+        public void Create(Vector2Int pos);
+        public void DrawByEditor();
     }
 }
 /// <summary>

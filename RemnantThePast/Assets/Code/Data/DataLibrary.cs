@@ -14,6 +14,7 @@ using System.Runtime.CompilerServices;
 using SaveLoad;
 using UnityEngine.SceneManagement;
 using EnemyActionTree;
+using Equip;
 
 /// <summary>
 /// 数据库
@@ -48,6 +49,7 @@ public class DataLibrary
     #region 数据库
     public Dictionary<int,CharacterInfo> characterInfos;
     public Dictionary<int,EquipInfo> equipinfos;
+    public Dictionary<string, Type> equipdatas;
     public Dictionary<string,SkillInfo> skillInfos;
     public Dictionary<string, SkillRange> skillranges;
     public Dictionary<string, MonsterInfo> monsterInfos;
@@ -91,6 +93,8 @@ public class DataLibrary
         bufinfos = (await LoadResouceInfo<BattleUnitBufInfo>("Data/BufInfo")).ToDictionary(s => s.ID);
         //载入被动信息
         passiveinfos = (await LoadResouceInfo<PassiveInfo>("Data/PassiveInfo")).ToDictionary(s => s.ID);
+        //载入遗珍信息
+        equipinfos = (await LoadResouceInfo<EquipInfo>("Data/EquipInfo")).ToDictionary(s => s.ID);
     }
     void GetDeriveds()
     {
@@ -111,6 +115,9 @@ public class DataLibrary
         }
         //载入敌人意图树
         enemyactions = GetDerivedTypesInNamespace<EnemyActionTreeBase>("EnemyActionTree").ToDictionary(x => x.Name);
+
+        //载入装备代码
+        equipdatas = GetDerivedTypesInNamespace<EquipBase>("Equip").ToDictionary(x => x.Name);
     }
     async void LoadGame()
     {
@@ -189,6 +196,27 @@ public class DataLibrary
         }
         return null;
     }
+    public EquipBase GetEquip(EquipInfo info)
+    {
+        if (equipdatas.TryGetValue("Equip_" + info.EquipData, out Type type))
+        {
+            try
+            {
+                // 创建实例并转换为基类类型
+                var instance = Activator.CreateInstance(type) as EquipBase;
+                if (instance != null)
+                {
+                    instance.EquipInfo = info;
+                    return instance;
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError($"创建类型 {type.Name} 的实例时出错：{ex.Message}");
+            }
+        }
+        return null;
+    }
     public EnemyActionTreeBase GetEnemyActionTree(string name)
     {
         if (enemyactions.TryGetValue(name, out Type type))
@@ -249,12 +277,13 @@ public class DataLibrary
             "Monsters",
             "SkillRange",
             "BufInfo",
-            "EquipInfo"
+            "EquipInfo",
+            "PassiveInfo"
         };
         for (int i = 0;i < replicas.Count; i++)
         {
             string sourceFile = Path.Combine(sourcePath, replicas[i] +".json");
-            string destFile = Path.Combine(sourcePath, replicas[i] + " replica.json");
+            string destFile = Path.Combine(sourcePath, "Replica", replicas[i] + " replica.json");
             if (File.Exists(destFile))
             {
                 File.Delete(destFile);

@@ -1,0 +1,27 @@
+[
+  {
+    "ID": "Amiya_Passive1",
+    "Name": "情绪吸收",
+    "Description": "造成伤害时获得#u2#eu点技力。"
+  },
+  {
+    "ID": "Chen_Passive1",
+    "Name": "呵斥",
+    "Description": "在场时每刻为全场近卫干员回复1点技力。"
+  },
+  {
+    "ID": "Chen_Passive2",
+    "Name": "持刀格斗术",
+    "Description": "攻击力+5%，防御力+5%，物理闪避+10%。"
+  },
+  {
+    "ID": "Kalts_Passive1",
+    "Name": "Mon3tr",
+    "Description": "Mon3tr会在战斗开始时加入战斗。Mon3tr不在凯尔希攻击范围内时防御力降至0。"
+  },
+  {
+    "ID": "Kalts_Passive2",
+    "Name": "不毁重构",
+    "Description": "Mon3tr死亡时使周围8格内所有敌人晕眩1刻并对其造成1200点真实伤害。"
+  }
+]

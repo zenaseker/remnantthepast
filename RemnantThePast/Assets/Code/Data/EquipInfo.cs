@@ -10,11 +10,29 @@ using UnityEngine;
 public class EquipInfo
 {
     public int ID {  get; set; }
-    public string Name { get; set; }
-    public string Description { get; set; }
     public string Icon { get; set; }
-    public int Rarity { get; set; }//1~5
-
+    public int MinRarity { get; set; }//0~4
+    public int MaxRarity { get; set; }
+    public string EquipData { get; set; }
+    public RartityInfo[] RartityInfos { get; set; }
+    public EquipInfo()
+    {
+        MinRarity = 0;
+        MaxRarity = 4;
+        RartityInfos = new RartityInfo[5]
+        {
+            new RartityInfo(),
+            new RartityInfo(),
+            new RartityInfo(),
+            new RartityInfo(),
+            new RartityInfo()
+        };
+    }
+    public class RartityInfo
+    {
+        public string Name { get; set; }
+        public string Description { get; set; }
+    }
     [JsonIgnore]
     Sprite _sprite;
     [JsonIgnore]
@@ -36,10 +54,28 @@ public class EquipInfo
     }
     public Color GetLight()
     {
-        switch (Rarity)
+        switch (MinRarity)
         {
             default:
                 return Color.white;
+        }
+    }
+    public static string GetRarityName(int rarity)
+    {
+        switch (rarity)
+        {
+            case 0:
+                return "¾ÉÎï";
+            case 1:
+                return "ÒÅºÛ";
+            case 2:
+                return "µä²Ø";
+            case 3:
+                return "¾øÕÂ";
+            case 4:
+                return "×ªÞæ";
+            default:
+                return "Î´Öª";
         }
     }
 }

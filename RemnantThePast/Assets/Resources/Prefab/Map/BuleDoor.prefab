@@ -93,6 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8516397953568212644}
   - component: {fileID: 2797536258475979163}
+  - component: {fileID: 9098178202410588442}
   m_Layer: 20
   m_Name: BuleDoor
   m_TagString: Untagged
@@ -137,3 +138,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &9098178202410588442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9041964153463135262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7e3cee91cac31045826d7e46a739eb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -8,10 +8,9 @@ using UnityEngine.SceneManagement;
 public class RedDoor : MonoBehaviour
 {
     public Animator Animator;
-    public void Start()
+    public void OnCreate(Vector2Int pos)
     {
-        Vector2Int now = new Vector2Int((int)this.transform.position.x, (int)(this.transform.position.y - 0.13f));
-        MapManager.Instance.AddGridAction(now, PlayerIn, PlayerOut);
+        MapManager.Instance.AddGridAction(pos, PlayerIn, PlayerOut);
     }
     public void PlayerIn(GameObject player)
     {
