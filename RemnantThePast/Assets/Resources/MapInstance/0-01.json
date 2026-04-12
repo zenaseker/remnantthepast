@@ -6,257 +6,265 @@
       "Col": 0,
       "CanTo": false,
       "MoveToCost": 1000,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 0,
       "Col": 1,
       "CanTo": true,
       "MoveToCost": 0,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 0,
       "Col": 2,
       "CanTo": false,
       "MoveToCost": 1000,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 1,
       "Col": 0,
       "CanTo": true,
       "MoveToCost": 0,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 1,
       "Col": 1,
       "CanTo": true,
       "MoveToCost": 0,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 1,
       "Col": 2,
       "CanTo": true,
       "MoveToCost": 0,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 2,
       "Col": 0,
       "CanTo": true,
       "MoveToCost": 0,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 2,
       "Col": 1,
       "CanTo": true,
       "MoveToCost": 0,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 2,
       "Col": 2,
       "CanTo": true,
       "MoveToCost": 0,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 3,
       "Col": 0,
       "CanTo": true,
       "MoveToCost": 0,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 3,
       "Col": 1,
       "CanTo": true,
       "MoveToCost": 0,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 3,
       "Col": 2,
       "CanTo": true,
       "MoveToCost": 0,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 4,
       "Col": 0,
       "CanTo": false,
       "MoveToCost": 1000,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 4,
       "Col": 1,
       "CanTo": true,
       "MoveToCost": 0,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 4,
       "Col": 2,
       "CanTo": false,
       "MoveToCost": 1000,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 5,
       "Col": 0,
       "CanTo": false,
       "MoveToCost": 1000,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 5,
       "Col": 1,
       "CanTo": true,
       "MoveToCost": 0,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 3,
+      "Facilities": {
+        "$type": "MapTile+Door, Assembly-CSharp",
+        "IsStartDoor": true
+      }
     },
     {
       "Row": 5,
       "Col": 2,
       "CanTo": false,
       "MoveToCost": 1000,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 6,
       "Col": 0,
       "CanTo": false,
       "MoveToCost": 1000,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 6,
       "Col": 1,
       "CanTo": true,
       "MoveToCost": 0,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 6,
       "Col": 2,
       "CanTo": false,
       "MoveToCost": 1000,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 7,
       "Col": 0,
       "CanTo": true,
       "MoveToCost": 0,
-      "Monster": "Slime",
-      "Doors": null
+      "FacilitiesType": 1,
+      "Facilities": {
+        "$type": "MapTile+Monster, Assembly-CSharp",
+        "MonsterID": "Slime"
+      }
     },
     {
       "Row": 7,
       "Col": 1,
       "CanTo": true,
       "MoveToCost": 0,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 7,
       "Col": 2,
       "CanTo": true,
       "MoveToCost": 0,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 8,
       "Col": 0,
       "CanTo": true,
       "MoveToCost": 0,
-      "Monster": "",
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 8,
       "Col": 1,
       "CanTo": true,
       "MoveToCost": 0,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 8,
       "Col": 2,
       "CanTo": true,
       "MoveToCost": 0,
-      "Monster": "GoPro",
-      "Doors": null
+      "FacilitiesType": 1,
+      "Facilities": {
+        "$type": "MapTile+Monster, Assembly-CSharp",
+        "MonsterID": "GoPro"
+      }
     },
     {
       "Row": 9,
       "Col": 0,
       "CanTo": false,
       "MoveToCost": 1000,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     },
     {
       "Row": 9,
       "Col": 1,
       "CanTo": true,
       "MoveToCost": 0,
-      "Monster": null,
-      "Doors": [
-        {
-          "TargetMapId": "0-02",
-          "TargetMapDoorPos": {
-            "x": 0,
-            "y": 3,
-            "magnitude": 3.0,
-            "sqrMagnitude": 9
-          },
-          "MapOffest": {
-            "x": 11,
-            "y": -1,
-            "magnitude": 11.0453606,
-            "sqrMagnitude": 122
-          },
-          "Transfer": false
-        }
-      ]
+      "FacilitiesType": 2,
+      "Facilities": {
+        "$type": "MapTile+Cross, Assembly-CSharp",
+        "TargetMapId": "0-02",
+        "TargetMapDoorPos": {
+          "x": 0,
+          "y": 3,
+          "magnitude": 3.0,
+          "sqrMagnitude": 9
+        },
+        "MapOffest": {
+          "x": 11,
+          "y": -1,
+          "magnitude": 11.0453606,
+          "sqrMagnitude": 122
+        },
+        "Transfer": false
+      }
     },
     {
       "Row": 9,
       "Col": 2,
       "CanTo": false,
       "MoveToCost": 1000,
-      "Monster": null,
-      "Doors": null
+      "FacilitiesType": 0,
+      "Facilities": null
     }
   ],
   "MapRowCount": 10,

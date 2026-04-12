@@ -1,9 +1,31 @@
 [
   {
     "ID": 1,
-    "Name": "低级术师芯片",
-    "Description": null,
     "Icon": "rogue_1_recruit_ticket_caster$0",
-    "Rarity": 0
+    "MinRarity": 1,
+    "MaxRarity": 5,
+    "EquipData": "",
+    "RartityInfos": [
+      {
+        "Name": null,
+        "Description": null
+      },
+      {
+        "Name": null,
+        "Description": null
+      },
+      {
+        "Name": null,
+        "Description": null
+      },
+      {
+        "Name": null,
+        "Description": null
+      },
+      {
+        "Name": null,
+        "Description": null
+      }
+    ]
   }
 ]

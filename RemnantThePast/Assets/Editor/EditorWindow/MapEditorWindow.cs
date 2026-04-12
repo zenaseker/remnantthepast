@@ -7,6 +7,7 @@ using System.Text;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
+using static MapTile;
 
 public class MapEditorWindow : EditorWindow
 {
@@ -14,7 +15,6 @@ public class MapEditorWindow : EditorWindow
     protected Vector2Int SelectTile;
     protected Vector2Int m_Scale;
     protected Vector2 scrollview;
-    protected Vector2Int[] AStar_Way;
     protected int SelectType = 0;
     protected int GrilSize = 50;
     protected MapManager m_Manager;
@@ -117,12 +117,6 @@ public class MapEditorWindow : EditorWindow
                     case 0:
                         SelectTile = new Vector2Int(cellX, cellY);
                         break;
-                    case 1:
-                        m_Instance.BlueDoor = new Vector2Int(cellX, cellY);
-                        break;
-                    case 2:
-                        m_Instance.RedDoor = new Vector2Int(cellX, cellY);
-                        break;
                     case 3:
                         m_Instance.CenterMove = -new Vector2Int(cellX, cellY);
                         break;
@@ -146,25 +140,23 @@ public class MapEditorWindow : EditorWindow
                     GUI.Label(cellRect, tile.ToString() + "\r\n是空的");
                     continue;
                 }
-                if (m_Instance.HasStartDoor && m_Instance.BlueDoor != null && tile == m_Instance.BlueDoor)
+                if (mapTile.FacilitiesType != MapTile.IFacilities.FacilitiesType.None)
                 {
-                    GUI.color = Color.blue;
-                }
-                else if (m_Instance.HasEndDoor && m_Instance.RedDoor != null && tile == m_Instance.RedDoor)
-                {
-                    GUI.color = Color.red;
-                }
-                else if (mapTile.Doors != null && mapTile.Doors.Count > 0)
-                {
-                    GUI.color = Color.magenta;
-                }
-                else if (AStar_Way != null && AStar_Way.Contains(tile))
-                {
-                    GUI.color = Color.green;
-                }
-                else if (mapTile.Monster != null && mapTile.Monster != "")
-                {
-                    GUI.color = Color.yellow;
+                    switch (mapTile.FacilitiesType)
+                    {
+                        case IFacilities.FacilitiesType.Monster:
+                            GUI.color = Color.yellow;
+                            break;
+                        case IFacilities.FacilitiesType.Cross:
+                            GUI.color = Color.magenta;
+                            break;
+                        case IFacilities.FacilitiesType.StartDoor:
+                            GUI.color = Color.blue;
+                            break;
+                        case IFacilities.FacilitiesType.EndDoor:
+                            GUI.color = Color.red;
+                            break;
+                    }
                 }
                 else
                 {
@@ -210,28 +202,6 @@ public class MapEditorWindow : EditorWindow
             EditorGUILayout.HelpBox("正在设置原点...", MessageType.Info);
         }
         EditorGUILayout.EndVertical();
-        EditorGUILayout.BeginVertical("box");
-        m_Instance.HasStartDoor = EditorGUILayout.Toggle(m_Instance.HasStartDoor ? $"蓝门坐标：{m_Instance.BlueDoor}" : "未启用出生点", m_Instance.HasStartDoor);
-        if (GUILayout.Button("设置蓝门"))
-        {
-            SelectType = 1;
-        }
-        if (SelectType == 1)
-        {
-            EditorGUILayout.HelpBox("正在设置蓝门...", MessageType.Info);
-        }
-        EditorGUILayout.EndVertical();
-        EditorGUILayout.BeginVertical("box");
-        m_Instance.HasEndDoor = EditorGUILayout.Toggle(m_Instance.HasEndDoor ? $"蓝门坐标：{m_Instance.RedDoor}" : "未启用目标点", m_Instance.HasEndDoor);
-        if (GUILayout.Button("设置红门"))
-        {
-            SelectType = 2;
-        }
-        if (SelectType == 2)
-        {
-            EditorGUILayout.HelpBox("正在设置红门...", MessageType.Info);
-        }
-        EditorGUILayout.EndVertical();
         EditorGUILayout.EndHorizontal();
         GUILayout.EndVertical();
     }
@@ -249,55 +219,37 @@ public class MapEditorWindow : EditorWindow
         {
             EditorGUILayout.HelpBox("当前网格是空的", MessageType.Warning);
         }
-        tile.Monster = EditorGUILayout.TextField("敌人ID", tile.Monster);
         EditorGUILayout.BeginVertical("Box");
-        EditorGUILayout.LabelField("门");
-        if (tile.Doors != null)
+        EditorGUILayout.LabelField("地图设施");
+        tile.FacilitiesType = (IFacilities.FacilitiesType)EditorGUILayout.EnumPopup("设施类型", tile.FacilitiesType);
+        if (tile.Facilities != null)
         {
-            foreach (var door in tile.Doors)
+            tile.Facilities.DrawByEditor();
+            if (GUILayout.Button("删除设施"))
             {
-                EditorGUILayout.BeginVertical("Box");
-                door.TargetMapId = EditorGUILayout.TextField("目标地图id",door.TargetMapId);
-                door.TargetMapDoorPos = EditorGUILayout.Vector2IntField("目标格坐标", door.TargetMapDoorPos);
-                door.MapOffest = EditorGUILayout.Vector2IntField("两地图原点坐标向量", door.MapOffest);
-                door.Transfer = EditorGUILayout.Toggle("通过传送抵达", door.Transfer);
-                GUILayout.EndVertical();
+                tile.Facilities = null;
+                tile.FacilitiesType = IFacilities.FacilitiesType.None;
             }
         }
-        if (GUILayout.Button("新建门"))
+        else if (GUILayout.Button("新建设施"))
         {
-            if (tile.Doors == null)
+            switch (tile.FacilitiesType)
             {
-                tile.Doors = new List<MapTile.Door>();
+                case IFacilities.FacilitiesType.Monster:
+                    tile.Facilities = new MapTile.Monster();
+                    break;
+                case IFacilities.FacilitiesType.Cross:
+                    tile.Facilities = new MapTile.Cross();
+                    break;
+                case IFacilities.FacilitiesType.StartDoor:
+                    tile.Facilities = new MapTile.Door(true);
+                    break;
+                case IFacilities.FacilitiesType.EndDoor:
+                    tile.Facilities = new MapTile.Door(false);
+                    break;
             }
-            tile.Doors.Add(new MapTile.Door());
-        }
-        if (tile.Doors != null && tile.Doors.Count > 0 && GUILayout.Button("删除门"))
-        {
-            tile.Doors.RemoveAt(tile.Doors.Count - 1);
         }
         GUILayout.EndVertical();
-        EditorGUILayout.Space(100);
-        if (GUILayout.Button("寻路计算"))
-        {
-            List<Vector2Int> tiles = m_Instance.FindPath(m_Instance.BlueDoor, m_Instance.RedDoor);
-            if (tiles != null)
-            {
-                AStar_Way = tiles.ToArray();
-            }
-            else
-            {
-                Debug.Log("寻路失败");
-            }
-        }
-        if (GUILayout.Button("清除寻路标记"))
-        {
-            AStar_Way = null;
-        }
-        if (AStar_Way != null && AStar_Way.Length > 0)
-        {
-            EditorGUILayout.LabelField($"寻路路径:{string.Join(",", AStar_Way)}");
-        }
         GUILayout.EndVertical();
     }
 }

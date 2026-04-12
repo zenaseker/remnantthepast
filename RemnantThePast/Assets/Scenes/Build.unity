@@ -122,7 +122,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &1778853
+--- !u!1001 &59722487
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -134,17 +134,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: 0-01
       objectReference: {fileID: 0}
-    - target: {fileID: 2301568607264115806, guid: 0108cdf4fd4097d4084b4d74dc26e77b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8918934955073816196, guid: 0108cdf4fd4097d4084b4d74dc26e77b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8918934955073816196, guid: 0108cdf4fd4097d4084b4d74dc26e77b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: 8918934955073816196, guid: 0108cdf4fd4097d4084b4d74dc26e77b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -183,10 +179,10 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0108cdf4fd4097d4084b4d74dc26e77b, type: 3}
---- !u!4 &1778854 stripped
+--- !u!4 &59722488 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8918934955073816196, guid: 0108cdf4fd4097d4084b4d74dc26e77b, type: 3}
-  m_PrefabInstance: {fileID: 1778853}
+  m_PrefabInstance: {fileID: 59722487}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &152415872
 GameObject:
@@ -301,7 +297,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1778854}
+  - {fileID: 59722488}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &575091994

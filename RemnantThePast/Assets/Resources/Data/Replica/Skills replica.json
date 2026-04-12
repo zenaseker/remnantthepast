@@ -1,0 +1,1124 @@
+[
+  {
+    "Attribution": "",
+    "ID": "DefaultAttack",
+    "Name": "普通攻击",
+    "Image": "",
+    "Rarity": 0,
+    "IsDerivedSkill": false,
+    "Type": 1,
+    "skillLevelNumbers": [
+      {
+        "Description": "造成攻击力#u{0}%#eu的法术伤害。",
+        "needSp": 0,
+        "UseTime": 0.6,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size1",
+        "Number": [
+          100.0
+        ]
+      },
+      {
+        "Description": "造成攻击力#u{0}%#eu的法术伤害。",
+        "needSp": 0,
+        "UseTime": 0.6,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size1",
+        "Number": [
+          100.0
+        ]
+      },
+      {
+        "Description": "造成攻击力#u{0}%#eu的法术伤害。",
+        "needSp": 0,
+        "UseTime": 0.6,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size1",
+        "Number": [
+          100.0
+        ]
+      },
+      {
+        "Description": "造成攻击力#u{0}%#eu的法术伤害。",
+        "needSp": 0,
+        "UseTime": 0.6,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size1",
+        "Number": [
+          100.0
+        ]
+      },
+      {
+        "Description": "造成攻击力#u{0}%#eu的法术伤害。",
+        "needSp": 0,
+        "UseTime": 0.6,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size1",
+        "Number": [
+          100.0
+        ]
+      }
+    ],
+    "targetType": 3
+  },
+  {
+    "Attribution": "",
+    "ID": "PowerSkill_1",
+    "Name": "战术咏唱·α型",
+    "Image": "skill_icon_skcom_magic_rage[1]",
+    "Rarity": 1,
+    "IsDerivedSkill": false,
+    "Type": 6,
+    "skillLevelNumbers": [
+      {
+        "Description": "普通攻击消耗的时间减少#u{0}%#eu。",
+        "needSp": 50,
+        "UseTime": 0.0,
+        "Duraction": 4.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          20.0
+        ]
+      },
+      {
+        "Description": "普通攻击消耗的时间减少#u{0}%#eu。",
+        "needSp": 50,
+        "UseTime": 0.0,
+        "Duraction": 4.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          25.0
+        ]
+      },
+      {
+        "Description": "普通攻击消耗的时间减少#u{0}%#eu。",
+        "needSp": 50,
+        "UseTime": 0.0,
+        "Duraction": 4.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          30.0
+        ]
+      },
+      {
+        "Description": "普通攻击消耗的时间减少#u{0}%#eu。",
+        "needSp": 50,
+        "UseTime": 0.0,
+        "Duraction": 4.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          35.0
+        ]
+      },
+      {
+        "Description": "普通攻击消耗的时间减少#u{0}%#eu。",
+        "needSp": 50,
+        "UseTime": 0.0,
+        "Duraction": 4.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          40.0
+        ]
+      }
+    ],
+    "targetType": 0
+  },
+  {
+    "Attribution": "",
+    "ID": "PowerSkill_2",
+    "Name": "战术咏唱·β型",
+    "Image": "skill_icon_skcom_magic_rage[2]",
+    "Rarity": 1,
+    "IsDerivedSkill": false,
+    "Type": 6,
+    "skillLevelNumbers": [
+      {
+        "Description": "普通攻击消耗的时间减少#u{0}%#eu。",
+        "needSp": 45,
+        "UseTime": 0.0,
+        "Duraction": 5.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          25.0
+        ]
+      },
+      {
+        "Description": "普通攻击消耗的时间减少#u{0}%#eu。",
+        "needSp": 45,
+        "UseTime": 0.0,
+        "Duraction": 5.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          30.0
+        ]
+      },
+      {
+        "Description": "普通攻击消耗的时间减少#u{0}%#eu。",
+        "needSp": 45,
+        "UseTime": 0.0,
+        "Duraction": 5.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          35.0
+        ]
+      },
+      {
+        "Description": "普通攻击消耗的时间减少#u{0}%#eu。",
+        "needSp": 45,
+        "UseTime": 0.0,
+        "Duraction": 5.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          40.0
+        ]
+      },
+      {
+        "Description": "普通攻击消耗的时间减少#u{0}%#eu。",
+        "needSp": 45,
+        "UseTime": 0.0,
+        "Duraction": 5.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          45.0
+        ]
+      }
+    ],
+    "targetType": 0
+  },
+  {
+    "Attribution": "",
+    "ID": "PowerSkill_3",
+    "Name": "战术咏唱·γ型",
+    "Image": "skill_icon_skcom_magic_rage[3]",
+    "Rarity": 1,
+    "IsDerivedSkill": false,
+    "Type": 6,
+    "skillLevelNumbers": [
+      {
+        "Description": "普通攻击消耗的时间减少#u{0}%#eu。",
+        "needSp": 40,
+        "UseTime": 0.0,
+        "Duraction": 6.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          30.0
+        ]
+      },
+      {
+        "Description": "普通攻击消耗的时间减少#u{0}%#eu。",
+        "needSp": 40,
+        "UseTime": 0.0,
+        "Duraction": 6.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          35.0
+        ]
+      },
+      {
+        "Description": "普通攻击消耗的时间减少#u{0}%#eu。",
+        "needSp": 40,
+        "UseTime": 0.0,
+        "Duraction": 6.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          40.0
+        ]
+      },
+      {
+        "Description": "普通攻击消耗的时间减少#u{0}%#eu。",
+        "needSp": 40,
+        "UseTime": 0.0,
+        "Duraction": 6.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          45.0
+        ]
+      },
+      {
+        "Description": "普通攻击消耗的时间减少#u{0}%#eu。",
+        "needSp": 40,
+        "UseTime": 0.0,
+        "Duraction": 6.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          50.0
+        ]
+      }
+    ],
+    "targetType": 0
+  },
+  {
+    "Attribution": "Amiya",
+    "ID": "Amiya_skill_2",
+    "Name": "精神爆发",
+    "Image": "skill_icon_skchr_amiya_2",
+    "Rarity": 2,
+    "IsDerivedSkill": false,
+    "Type": 2,
+    "skillLevelNumbers": [
+      {
+        "Description": "停止移动，普通攻击攻击变为攻击力#u{0}%#eu的#u{1}#eu连发，随机攻击范围内的目标。\n#y技能结束后阿米娅晕眩2刻#ec",
+        "needSp": 100,
+        "UseTime": 0.0,
+        "Duraction": 5.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          33.0,
+          6.0
+        ]
+      },
+      {
+        "Description": "停止移动，普通攻击攻击变为攻击力#u{0}%#eu的#u{1}#eu连发，随机攻击范围内的目标。\n#y技能结束后阿米娅晕眩2刻#ec",
+        "needSp": 100,
+        "UseTime": 0.0,
+        "Duraction": 5.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          37.0,
+          6.0
+        ]
+      },
+      {
+        "Description": "停止移动，普通攻击攻击变为攻击力#u{0}%#eu的#u{1}#eu连发，随机攻击范围内的目标。\n#y技能结束后阿米娅晕眩2刻#ec",
+        "needSp": 100,
+        "UseTime": 0.0,
+        "Duraction": 5.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          41.0,
+          7.0
+        ]
+      },
+      {
+        "Description": "停止移动，普通攻击攻击变为攻击力#u{0}%#eu的#u{1}#eu连发，随机攻击范围内的目标。\n#y技能结束后阿米娅晕眩2刻#ec",
+        "needSp": 100,
+        "UseTime": 0.0,
+        "Duraction": 5.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          45.0,
+          7.0
+        ]
+      },
+      {
+        "Description": "停止移动，普通攻击攻击变为攻击力#u{0}%#eu的#u{1}#eu连发，随机攻击范围内的目标。\n#y技能结束后阿米娅晕眩2刻#ec",
+        "needSp": 100,
+        "UseTime": 0.0,
+        "Duraction": 5.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          60.0,
+          8.0
+        ]
+      }
+    ],
+    "targetType": 0
+  },
+  {
+    "Attribution": "Amiya",
+    "ID": "Amiya_skill_3",
+    "Name": "奇美拉",
+    "Image": "skill_icon_skchr_amiya_3",
+    "Rarity": 3,
+    "IsDerivedSkill": false,
+    "Type": 6,
+    "skillLevelNumbers": [
+      {
+        "Description": "停止移动，攻击力#u+{0}%#eu，生命上限#u+{1}%#eu，攻击范围扩大，伤害类型变为真实。\n#y技能结束后阿米娅强制撤离#ec",
+        "needSp": 120,
+        "UseTime": 0.0,
+        "Duraction": 6.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          100.0,
+          25.0
+        ]
+      },
+      {
+        "Description": "停止移动，攻击力#u+{0}%#eu，生命上限#u+{1}%#eu，攻击范围扩大，伤害类型变为真实。\n#y技能结束后阿米娅强制撤离#ec",
+        "needSp": 120,
+        "UseTime": 0.0,
+        "Duraction": 6.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          120.0,
+          25.0
+        ]
+      },
+      {
+        "Description": "停止移动，攻击力#u+{0}%#eu，生命上限#u+{1}%#eu，攻击范围扩大，伤害类型变为真实。\n#y技能结束后阿米娅强制撤离#ec",
+        "needSp": 120,
+        "UseTime": 0.0,
+        "Duraction": 6.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          140.0,
+          50.0
+        ]
+      },
+      {
+        "Description": "停止移动，攻击力#u+{0}%#eu，生命上限#u+{1}%#eu，攻击范围扩大，伤害类型变为真实。\n#y技能结束后阿米娅强制撤离#ec",
+        "needSp": 120,
+        "UseTime": 0.0,
+        "Duraction": 6.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          160.0,
+          75.0
+        ]
+      },
+      {
+        "Description": "停止移动，攻击力#u+{0}%#eu，生命上限#u+{1}%#eu，攻击范围扩大，伤害类型变为真实。\n#y技能结束后阿米娅强制撤离#ec",
+        "needSp": 120,
+        "UseTime": 0.0,
+        "Duraction": 6.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          230.0,
+          100.0
+        ]
+      }
+    ],
+    "targetType": 0
+  },
+  {
+    "Attribution": "Amiya",
+    "ID": "Amiya_skill_2_Atk",
+    "Name": "普通攻击(精神爆发)",
+    "Image": "skill_icon_skchr_amiya_2",
+    "Rarity": 4,
+    "IsDerivedSkill": true,
+    "Type": 1,
+    "skillLevelNumbers": [
+      {
+        "Description": "造成攻击力#u{0}%#eu的#u{1}#eu连发，随机攻击范围内的目标。",
+        "needSp": 0,
+        "UseTime": 0.6,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size1",
+        "Number": [
+          33.0,
+          6.0
+        ]
+      },
+      {
+        "Description": "造成攻击力#u{0}%#eu的#u{1}#eu连发，随机攻击范围内的目标。",
+        "needSp": 0,
+        "UseTime": 0.6,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size1",
+        "Number": [
+          37.0,
+          6.0
+        ]
+      },
+      {
+        "Description": "造成攻击力#u{0}%#eu的#u{1}#eu连发，随机攻击范围内的目标。",
+        "needSp": 0,
+        "UseTime": 0.6,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size1",
+        "Number": [
+          41.0,
+          7.0
+        ]
+      },
+      {
+        "Description": "造成攻击力#u{0}%#eu的#u{1}#eu连发，随机攻击范围内的目标。",
+        "needSp": 0,
+        "UseTime": 0.6,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size1",
+        "Number": [
+          45.0,
+          7.0
+        ]
+      },
+      {
+        "Description": "造成攻击力#u{0}%#eu的#u{1}#eu连发，随机攻击范围内的目标。",
+        "needSp": 0,
+        "UseTime": 0.6,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size1",
+        "Number": [
+          60.0,
+          8.0
+        ]
+      }
+    ],
+    "targetType": 4
+  },
+  {
+    "Attribution": "Amiya",
+    "ID": "Amiya_skill_3_Atk",
+    "Name": "普通攻击(奇美拉)",
+    "Image": "skill_icon_skchr_amiya_3",
+    "Rarity": 4,
+    "IsDerivedSkill": true,
+    "Type": 1,
+    "skillLevelNumbers": [
+      {
+        "Description": "造成攻击力#u{0}%#eu的真实伤害。",
+        "needSp": 0,
+        "UseTime": 0.6,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size2_less1",
+        "Number": [
+          100.0
+        ]
+      },
+      {
+        "Description": "造成攻击力#u{0}%#eu的真实伤害。",
+        "needSp": 0,
+        "UseTime": 0.6,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size2_less1",
+        "Number": [
+          100.0
+        ]
+      },
+      {
+        "Description": "造成攻击力#u{0}%#eu的真实伤害。",
+        "needSp": 0,
+        "UseTime": 0.6,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size2_less1",
+        "Number": [
+          100.0
+        ]
+      },
+      {
+        "Description": "造成攻击力#u{0}%#eu的真实伤害。",
+        "needSp": 0,
+        "UseTime": 0.6,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size2_less1",
+        "Number": [
+          100.0
+        ]
+      },
+      {
+        "Description": "造成攻击力#u{0}%#eu的真实伤害。",
+        "needSp": 0,
+        "UseTime": 0.6,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size2_less1",
+        "Number": [
+          100.0
+        ]
+      }
+    ],
+    "targetType": 3
+  },
+  {
+    "Attribution": "",
+    "ID": "DefaultAttack_double",
+    "Name": "普通攻击",
+    "Image": "",
+    "Rarity": 0,
+    "IsDerivedSkill": false,
+    "Type": 1,
+    "skillLevelNumbers": [
+      {
+        "Description": "造成攻击力#u{0}%#eu的物理伤害#u2#eu次。",
+        "needSp": 0,
+        "UseTime": 1.0,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size1_less1",
+        "Number": [
+          100.0
+        ]
+      },
+      {
+        "Description": "造成攻击力#u{0}%#eu的物理伤害#u2#eu次。",
+        "needSp": 0,
+        "UseTime": 1.0,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size1_less1",
+        "Number": [
+          100.0
+        ]
+      },
+      {
+        "Description": "造成攻击力#u{0}%#eu的物理伤害#u2#eu次。",
+        "needSp": 0,
+        "UseTime": 1.0,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size1_less1",
+        "Number": [
+          100.0
+        ]
+      },
+      {
+        "Description": "造成攻击力#u{0}%#eu的物理伤害#u2#eu次。",
+        "needSp": 0,
+        "UseTime": 1.0,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size1_less1",
+        "Number": [
+          100.0
+        ]
+      },
+      {
+        "Description": "造成攻击力#u{0}%#eu的物理伤害#u2#eu次。",
+        "needSp": 0,
+        "UseTime": 1.0,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size1_less1",
+        "Number": [
+          100.0
+        ]
+      }
+    ],
+    "targetType": 3
+  },
+  {
+    "Attribution": "Chen",
+    "ID": "Chen_skill_1",
+    "Name": "鞘击",
+    "Image": "skill_icon_skchr_chen_1",
+    "Rarity": 1,
+    "IsDerivedSkill": false,
+    "Type": 1,
+    "skillLevelNumbers": [
+      {
+        "Description": "造成攻击力#u{0}%#eu的物理伤害，令命中目标最近的意图向后移动#u{0}#eu刻。",
+        "needSp": 7,
+        "UseTime": 0.9,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size1_less1",
+        "Number": [
+          200.0,
+          0.3
+        ]
+      },
+      {
+        "Description": "造成攻击力#u{0}%#eu的物理伤害，令命中目标最近的意图向后移动#u{0}#eu刻。",
+        "needSp": 7,
+        "UseTime": 0.9,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size1_less1",
+        "Number": [
+          220.0,
+          0.4
+        ]
+      },
+      {
+        "Description": "造成攻击力#u{0}%#eu的物理伤害，令命中目标最近的意图向后移动#u{0}#eu刻。",
+        "needSp": 6,
+        "UseTime": 0.9,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size1_less1",
+        "Number": [
+          240.0,
+          0.5
+        ]
+      },
+      {
+        "Description": "造成攻击力#u{0}%#eu的物理伤害，令命中目标最近的意图向后移动#u{0}#eu刻。",
+        "needSp": 5,
+        "UseTime": 0.9,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size1_less1",
+        "Number": [
+          260.0,
+          0.6
+        ]
+      },
+      {
+        "Description": "造成攻击力#u{0}%#eu的物理伤害，令命中目标最近的意图向后移动#u{0}#eu刻。",
+        "needSp": 4,
+        "UseTime": 0.9,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size1_less1",
+        "Number": [
+          320.0,
+          0.7
+        ]
+      }
+    ],
+    "targetType": 3
+  },
+  {
+    "Attribution": "Chen",
+    "ID": "Chen_skill_2",
+    "Name": "赤霄·拔刀",
+    "Image": "skill_icon_skchr_chen_2",
+    "Rarity": 2,
+    "IsDerivedSkill": false,
+    "Type": 1,
+    "skillLevelNumbers": [
+      {
+        "Description": "对选定方向范围内最多#u{0}#eu名敌人造成攻击力#u{1}%#eu的物理和攻击力#u{2}%#eu的法术伤害。",
+        "needSp": 27,
+        "UseTime": 1.0,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "ChiXiao",
+        "Number": [
+          3.0,
+          330.0,
+          330.0
+        ]
+      },
+      {
+        "Description": "对选定方向范围内最多#u{0}#eu名敌人造成攻击力#u{1}%#eu的物理和攻击力#u{2}%#eu的法术伤害。",
+        "needSp": 27,
+        "UseTime": 1.0,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "ChiXiao",
+        "Number": [
+          3.0,
+          350.0,
+          350.0
+        ]
+      },
+      {
+        "Description": "对选定方向范围内最多#u{0}#eu名敌人造成攻击力#u{1}%#eu的物理和攻击力#u{2}%#eu的法术伤害。",
+        "needSp": 26,
+        "UseTime": 1.0,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "ChiXiao",
+        "Number": [
+          4.0,
+          380.0,
+          380.0
+        ]
+      },
+      {
+        "Description": "对选定方向范围内最多#u{0}#eu名敌人造成攻击力#u{1}%#eu的物理和攻击力#u{2}%#eu的法术伤害。",
+        "needSp": 25,
+        "UseTime": 1.0,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "ChiXiao",
+        "Number": [
+          4.0,
+          410.0,
+          410.0
+        ]
+      },
+      {
+        "Description": "对选定方向范围内最多#u{0}#eu名敌人造成攻击力#u{1}%#eu的物理和攻击力#u{2}%#eu的法术伤害。",
+        "needSp": 20,
+        "UseTime": 1.0,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "ChiXiao",
+        "Number": [
+          5.0,
+          500.0,
+          500.0
+        ]
+      }
+    ],
+    "targetType": 4
+  },
+  {
+    "Attribution": "Chen",
+    "ID": "Chen_skill_3",
+    "Name": "赤霄·绝影",
+    "Image": "skill_icon_skchr_chen_3",
+    "Rarity": 3,
+    "IsDerivedSkill": false,
+    "Type": 1,
+    "skillLevelNumbers": [
+      {
+        "Description": "向周围寻找最近的敌方目标，对其发动#u10#eu次连续斩击，每次造成攻击力#u{0}%#eu的物理伤害，并在最后一击时令目标所有意图向后移动#u{0}#eu刻。",
+        "needSp": 40,
+        "UseTime": 2.0,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size2_less1",
+        "Number": [
+          200.0,
+          0.5
+        ]
+      },
+      {
+        "Description": "向周围寻找最近的敌方目标，对其发动#u10#eu次连续斩击，每次造成攻击力#u{0}%#eu的物理伤害，并在最后一击时令目标所有意图向后移动#u{0}#eu刻。",
+        "needSp": 40,
+        "UseTime": 2.0,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size2_less1",
+        "Number": [
+          220.0,
+          0.5
+        ]
+      },
+      {
+        "Description": "向周围寻找最近的敌方目标，对其发动#u10#eu次连续斩击，每次造成攻击力#u{0}%#eu的物理伤害，并在最后一击时令目标所有意图向后移动#u{0}#eu刻。",
+        "needSp": 38,
+        "UseTime": 2.0,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size2_less1",
+        "Number": [
+          240.0,
+          0.6
+        ]
+      },
+      {
+        "Description": "向周围寻找最近的敌方目标，对其发动#u10#eu次连续斩击，每次造成攻击力#u{0}%#eu的物理伤害，并在最后一击时令目标所有意图向后移动#u{0}#eu刻。",
+        "needSp": 36,
+        "UseTime": 2.0,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size2_less1",
+        "Number": [
+          260.0,
+          0.8
+        ]
+      },
+      {
+        "Description": "向周围寻找最近的敌方目标，对其发动#u10#eu次连续斩击，每次造成攻击力#u{0}%#eu的物理伤害，并在最后一击时令目标所有意图向后移动#u{0}#eu刻。",
+        "needSp": 30,
+        "UseTime": 2.0,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size2_less1",
+        "Number": [
+          320.0,
+          1.0
+        ]
+      }
+    ],
+    "targetType": 4
+  },
+  {
+    "Attribution": "Kalts",
+    "ID": "Kalts_skill_1",
+    "Name": "指令：结构加固",
+    "Image": "skill_icon_skchr_kalts_1",
+    "Rarity": 1,
+    "IsDerivedSkill": false,
+    "Type": 6,
+    "skillLevelNumbers": [
+      {
+        "Description": "自身和Mon3tr的防御力#u+{0}%#eu，且自身获得#u{1}#eu%的物理格挡。",
+        "needSp": 30,
+        "UseTime": 0.0,
+        "Duraction": 6.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          60.0,
+          20.0
+        ]
+      },
+      {
+        "Description": "自身和Mon3tr的防御力#u+{0}%#eu，且自身获得#u{1}#eu%的物理格挡。",
+        "needSp": 28,
+        "UseTime": 0.0,
+        "Duraction": 6.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          80.0,
+          20.0
+        ]
+      },
+      {
+        "Description": "自身和Mon3tr的防御力#u+{0}%#eu，且自身获得#u{1}#eu%的物理格挡。",
+        "needSp": 26,
+        "UseTime": 0.0,
+        "Duraction": 6.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          100.0,
+          30.0
+        ]
+      },
+      {
+        "Description": "自身和Mon3tr的防御力#u+{0}%#eu，且自身获得#u{1}#eu%的物理格挡。",
+        "needSp": 24,
+        "UseTime": 0.0,
+        "Duraction": 7.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          120.0,
+          40.0
+        ]
+      },
+      {
+        "Description": "自身和Mon3tr的防御力#u+{0}%#eu，且自身获得#u{1}#eu%的物理格挡。",
+        "needSp": 20,
+        "UseTime": 0.0,
+        "Duraction": 8.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          150.0,
+          50.0
+        ]
+      }
+    ],
+    "targetType": 0
+  },
+  {
+    "Attribution": "",
+    "ID": "DefaultTreat",
+    "Name": "普通治疗",
+    "Image": "",
+    "Rarity": 0,
+    "IsDerivedSkill": false,
+    "Type": 4,
+    "skillLevelNumbers": [
+      {
+        "Description": "为目标回复攻击力#u{0}%#eu的生命。",
+        "needSp": 0,
+        "UseTime": 1.0,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size2_less1",
+        "Number": [
+          100.0
+        ]
+      },
+      {
+        "Description": "为目标回复攻击力#u{0}%#eu的生命。",
+        "needSp": 0,
+        "UseTime": 1.0,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size2_less1",
+        "Number": [
+          100.0
+        ]
+      },
+      {
+        "Description": "为目标回复攻击力#u{0}%#eu的生命。",
+        "needSp": 0,
+        "UseTime": 1.0,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size2_less1",
+        "Number": [
+          100.0
+        ]
+      },
+      {
+        "Description": "为目标回复攻击力#u{0}%#eu的生命。",
+        "needSp": 0,
+        "UseTime": 1.0,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size2_less1",
+        "Number": [
+          100.0
+        ]
+      },
+      {
+        "Description": "为目标回复攻击力#u{0}%#eu的生命。",
+        "needSp": 0,
+        "UseTime": 1.0,
+        "Duraction": 0.0,
+        "Chargingcount": 1,
+        "RangeID": "Size2_less1",
+        "Number": [
+          100.0
+        ]
+      }
+    ],
+    "targetType": 2
+  },
+  {
+    "Attribution": "Kalts",
+    "ID": "Kalts_skill_2",
+    "Name": "指令：战术协同",
+    "Image": "skill_icon_skchr_kalts_2",
+    "Rarity": 2,
+    "IsDerivedSkill": false,
+    "Type": 6,
+    "skillLevelNumbers": [
+      {
+        "Description": "自身普通治疗消耗的刻#u-{0}%#eu，Mon3tr的攻击力#u+{1}%#eu，Mon3tr可以攻击范围内的所有敌人。\n#y该技能与Mon3tr绑定#ec",
+        "needSp": 14,
+        "UseTime": 0.0,
+        "Duraction": 3.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          25.0,
+          20.0
+        ]
+      },
+      {
+        "Description": "自身普通治疗消耗的刻#u-{0}%#eu，Mon3tr的攻击力#u+{1}%#eu，Mon3tr可以攻击范围内的所有敌人。\n#y该技能与Mon3tr绑定#ec",
+        "needSp": 14,
+        "UseTime": 0.0,
+        "Duraction": 3.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          30.0,
+          30.0
+        ]
+      },
+      {
+        "Description": "自身普通治疗消耗的刻#u-{0}%#eu，Mon3tr的攻击力#u+{1}%#eu，Mon3tr可以攻击范围内的所有敌人。\n#y该技能与Mon3tr绑定#ec",
+        "needSp": 13,
+        "UseTime": 0.0,
+        "Duraction": 3.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          35.0,
+          40.0
+        ]
+      },
+      {
+        "Description": "自身普通治疗消耗的刻#u-{0}%#eu，Mon3tr的攻击力#u+{1}%#eu，Mon3tr可以攻击范围内的所有敌人。\n#y该技能与Mon3tr绑定#ec",
+        "needSp": 12,
+        "UseTime": 0.0,
+        "Duraction": 3.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          40.0,
+          50.0
+        ]
+      },
+      {
+        "Description": "自身普通治疗消耗的刻#u-{0}%#eu，Mon3tr的攻击力#u+{1}%#eu，Mon3tr可以攻击范围内的所有敌人。\n#y该技能与Mon3tr绑定#ec",
+        "needSp": 8,
+        "UseTime": 0.0,
+        "Duraction": 4.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          50.0,
+          90.0
+        ]
+      }
+    ],
+    "targetType": 0
+  },
+  {
+    "Attribution": "Kalts",
+    "ID": "Kalts_skill_3",
+    "Name": "指令：熔毁",
+    "Image": "skill_icon_skchr_kalts_3",
+    "Rarity": 3,
+    "IsDerivedSkill": false,
+    "Type": 6,
+    "skillLevelNumbers": [
+      {
+        "Description": "Mon3tr的防御力#u+{0}%#eu，技能期间攻击力从#u+{1}%#eu逐渐降低至+0%且伤害类型变为#u真实#eu，此期间如果未击杀任何敌人则技能结束后流失最大生命的#u50%#eu。\n#y该技能与Mon3tr绑定#ec",
+        "needSp": 25,
+        "UseTime": 0.0,
+        "Duraction": 3.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          100.0,
+          130.0
+        ]
+      },
+      {
+        "Description": "Mon3tr的防御力#u+{0}%#eu，技能期间攻击力从#u+{1}%#eu逐渐降低至+0%且伤害类型变为#u真实#eu，此期间如果未击杀任何敌人则技能结束后流失最大生命的#u50%#eu。\n#y该技能与Mon3tr绑定#ec",
+        "needSp": 23,
+        "UseTime": 0.0,
+        "Duraction": 3.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          100.0,
+          150.0
+        ]
+      },
+      {
+        "Description": "Mon3tr的防御力#u+{0}%#eu，技能期间攻击力从#u+{1}%#eu逐渐降低至+0%且伤害类型变为#u真实#eu，此期间如果未击杀任何敌人则技能结束后流失最大生命的#u50%#eu。\n#y该技能与Mon3tr绑定#ec",
+        "needSp": 21,
+        "UseTime": 0.0,
+        "Duraction": 3.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          120.0,
+          170.0
+        ]
+      },
+      {
+        "Description": "Mon3tr的防御力#u+{0}%#eu，技能期间攻击力从#u+{1}%#eu逐渐降低至+0%且伤害类型变为#u真实#eu，此期间如果未击杀任何敌人则技能结束后流失最大生命的#u50%#eu。\n#y该技能与Mon3tr绑定#ec",
+        "needSp": 19,
+        "UseTime": 0.0,
+        "Duraction": 3.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          140.0,
+          190.0
+        ]
+      },
+      {
+        "Description": "Mon3tr的防御力#u+{0}%#eu，技能期间攻击力从#u+{1}%#eu逐渐降低至+0%且伤害类型变为#u真实#eu，此期间如果未击杀任何敌人则技能结束后流失最大生命的#u50%#eu。\n#y该技能与Mon3tr绑定#ec",
+        "needSp": 15,
+        "UseTime": 0.0,
+        "Duraction": 4.0,
+        "Chargingcount": 1,
+        "RangeID": "Size0",
+        "Number": [
+          200.0,
+          260.0
+        ]
+      }
+    ],
+    "targetType": 0
+  }
+]

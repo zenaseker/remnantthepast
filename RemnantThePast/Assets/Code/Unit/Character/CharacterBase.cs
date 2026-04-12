@@ -1,3 +1,4 @@
+using Equip;
 using SaveLoad;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ public class CharacterBase : MonoBehaviour, IHpUnit, AnimatorEvent, IRoundQueneO
     public Transform Effects { get;set; }
     public Dictionary<byte, SkillBase> orginskills;//初始技能组
     public Dictionary<byte,SkillBase> skills;//技能组
+    public EquipBase[] Equips {  get; private set; }//遗珍组
     public bool IsPlayer { get; set; }
     public GameObject SelectRing { get; set; }//选择环
     public bool InCombat { get; set; } = false;//是否在场
@@ -41,11 +43,19 @@ public class CharacterBase : MonoBehaviour, IHpUnit, AnimatorEvent, IRoundQueneO
             }
         }
         skills = new Dictionary<byte, SkillBase>(orginskills);
+        Equips = new EquipBase[4];
+        for (int i = 0;i < RoleData.equipments.Length;i++)
+        {
+            if (RoleData.equipments[i] != null && DataLibrary.Instance.equipinfos.TryGetValue(RoleData.equipments[i].id, out EquipInfo info))
+            {
+                Equips[i] = DataLibrary.Instance.GetEquip(info);
+            }
+        }
         BufComponent = new BufComponent(this);//初始化Buf组件
         TimeManager.Instance.TimeMoveAction += LogicUpdate;
         GameApp.Instance.AddCharacter(this);
 
-        SelectRing = transform.GetChild(0).gameObject;
+        SelectRing = transform.Find("SelectRing").gameObject;
         Spine = GameObject.Instantiate(Resources.Load<GameObject>("spine/" + CharacterInfo.Model + "/Spine"),transform).transform;
         Effects = transform.Find("effects");
         Animator = Spine.GetComponent<Animator>();

@@ -41,7 +41,7 @@ public class EnemyBase : MonoBehaviour, IHpUnit,AnimatorEvent, IRoundQueneObject
 
         Spine = GameObject.Instantiate(Resources.Load<GameObject>("spine/" + MonsterInfo.Model + "/Spine"), transform).transform;
 
-        SelectRing = transform.GetChild(1).gameObject;
+        SelectRing = transform.Find("SelectRing").gameObject;
         Effects = transform.Find("effects");
         Animator = Spine.GetComponent<Animator>();
     }

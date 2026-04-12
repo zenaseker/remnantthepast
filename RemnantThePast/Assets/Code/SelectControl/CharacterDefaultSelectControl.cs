@@ -61,12 +61,11 @@ namespace SelectControl
             }
             effect = PoolManage.Instance.GetPoolGameObject("VFX", "movetarget_vfx");
             effect.transform.position = new Vector3(0, 0, 10);
+            CameraManager.Instance.RayAction += UpdateRay;
         }
-
-        public override void Update()
+        void UpdateRay(RaycastHit hitInfo)
         {
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out RaycastHit hitInfo)
-                && hitInfo.transform.tag == "BackGround")
+            if (hitInfo.transform.tag == "BackGround")
             {
                 Vector3 pos = hitInfo.point;
                 pos.x = Mathf.Round(pos.x);
@@ -115,6 +114,7 @@ namespace SelectControl
             MapManager.Instance.UpdateRange("monster");
             UIManager.Instance.characterControl.CancelChoose();
             PoolManage.Instance.PushGameObject(effect);
+            CameraManager.Instance.RayAction -= UpdateRay;
         }
     }
     /// <summary>
@@ -128,6 +128,8 @@ namespace SelectControl
         {
             base.OnInit(select);
             UIManager.Instance.characterControl.SetButtonInteractable(false, true);
+            CameraManager.Instance.RayIn += RayIn;
+            CameraManager.Instance.RayOut += RayOut;
         }
         public override void SubInit(params object[] obj)
         {
@@ -140,13 +142,24 @@ namespace SelectControl
             skill = (SkillUIInfo)obj[0];
             UIManager.Instance.actionTimeLine.ShowAddTime(skill.Usetime);
             MapManager.Instance.skillrangeCells = skill.Range;
-            targets = skill.skillEvent.GetTarget();
-            foreach (IRoundQueneObject target in targets)
-            {
-                target?.SelectRing.SetActive(true);
-            }
             MapManager.Instance.UpdateRange("skill");
         }
+
+        void RayIn(RaycastHit hit)
+        {
+            if (hit.transform.gameObject.tag is "Monster")
+            {
+                hit.transform.GetComponent<IRoundQueneObject>().SelectRing.SetActive(true);
+            }
+        }
+        void RayOut(RaycastHit hit)
+        {
+            if (hit.transform.gameObject.tag is "Monster")
+            {
+                hit.transform.GetComponent<IRoundQueneObject>().SelectRing.SetActive(false);
+            }
+        }
+
         public override void OnSelect(object obj, string type)
         {
             base.OnSelect(obj, type);
@@ -173,12 +186,10 @@ namespace SelectControl
                     return;
             }
             UIManager.Instance.characterControl.CancelChoose();
-            foreach (IRoundQueneObject target in targets)
-            {
-                target?.SelectRing.SetActive(false);
-            }
             MapManager.Instance.skillrangeCells = null;
             MapManager.Instance.UpdateRange("monster");
+            CameraManager.Instance.RayIn -= RayIn;
+            CameraManager.Instance.RayOut -= RayOut;
         }
     }
 }

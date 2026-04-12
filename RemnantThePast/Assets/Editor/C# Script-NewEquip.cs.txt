@@ -1,0 +1,19 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Equip
+{
+    public class #SCRIPTNAME# : EquipBase
+    {
+        public override int EquipInfoID { get; set; }
+
+        public override void OnEquip()
+        {
+
+        }
+        public override void OnRemoveEuqip()
+        {
+
+        }
+    }
+}

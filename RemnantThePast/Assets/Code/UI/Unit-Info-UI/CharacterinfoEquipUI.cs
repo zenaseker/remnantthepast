@@ -17,7 +17,7 @@ public class CharacterinfoEquipUI : MonoBehaviour
         {
             Icons.gameObject.SetActive(true);
             Icons.sprite = equipInfos.sprite;
-            Names.text = equipInfos.Name;
+            Names.text = equipInfos.RartityInfos[equipments.Rarity].Name;
             Lights.color = equipInfos.GetLight();
         }
         else

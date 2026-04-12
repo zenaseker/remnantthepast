@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,6 +20,7 @@ public class CameraManager : Singleton<CameraManager>
     private void Update()
     {
         transform.position = ClampCameraPosition();
+        RayUpdate();
     }
     void CalculateAndSetInitialPosition()
     {
@@ -27,7 +29,7 @@ public class CameraManager : Singleton<CameraManager>
         MapCenter = new Vector3((MapManager.Instance.mapMaxX + MapManager.Instance.mapMinX) / 2, (MapManager.Instance.mapMaxY + MapManager.Instance.mapMinY) / 2);
         if(baseLength > 10)
         {
-            //如果地图纵长大于10，修改为中点计算
+            //如果地图纵长大于15，修改为中点计算
             baseLength = 10;
             this.transform.position = StartPos = new Vector3(MapCenter.x, MapCenter.y - 10, -baseLength);
         }
@@ -70,4 +72,27 @@ public class CameraManager : Singleton<CameraManager>
         }
         return targetPos;
     }
+
+
+    #region 射线管理器
+    public Action<RaycastHit> RayAction { get; set; }
+    public Action<RaycastHit> RayIn {  get; set; }
+    public Action<RaycastHit> RayOut { get; set; }
+    public RaycastHit PreRayHit { get; set; }
+    public RaycastHit NowRayHit { get; set; }
+    public void RayUpdate()
+    {
+        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out RaycastHit NowRayHit))
+        {
+            RayAction?.Invoke(NowRayHit);
+            if (NowRayHit.transform != PreRayHit.transform)
+            {
+                RayOut?.Invoke(PreRayHit);
+                RayIn?.Invoke(NowRayHit);
+            }
+            PreRayHit = NowRayHit;
+        }
+    }
+
+    #endregion
 }

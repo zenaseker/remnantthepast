@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
+using static MapTile;
 
 /// <summary>
 /// 关卡地图管理器
@@ -34,6 +35,7 @@ public class MapManager : Singleton<MapManager>
     {
         LoadMap(DataLibrary.Instance.MapID,Vector2Int.zero);//加载默认地图（当前为0-01）
     }
+
     /// <summary>
     /// 加载地图
     /// </summary>
@@ -77,7 +79,6 @@ public class MapManager : Singleton<MapManager>
         }
         StartCoroutine(WriteMaskTexture());
         StartCoroutine(LoadMapComponents(instance));
-        StartCoroutine(LoadUnit(instance));
     }
     IEnumerator LoadMapModel(MapInstance mapInstance)//加载初始地图
     {
@@ -103,54 +104,16 @@ public class MapManager : Singleton<MapManager>
     }
     IEnumerator LoadMapComponents(MapInstance mapInstance)//加载地图设施
     {
-        yield return null;//停帧等待初始化
-        if (mapInstance.HasStartDoor && mapInstance.BlueDoor != null)
-        {
-            Vector2Int worldpos = mapInstance.BlueDoor + mapInstance.WorldOffest + mapInstance.CenterMove;
-            Vector3 pos = new Vector3(worldpos.x + 0.5f, worldpos.y, 0);
-            GameObject.Instantiate(BlueDoor, transform.GetChild(0)).transform.localPosition = pos;
-            yield return null;
-        }
-        if (mapInstance.HasEndDoor && mapInstance.RedDoor != null)
-        {
-            Vector2Int worldpos = mapInstance.RedDoor + mapInstance.WorldOffest + mapInstance.CenterMove;
-            Vector3 pos = new Vector3(worldpos.x + 0.5f, worldpos.y, 0);
-            GameObject.Instantiate(RedDoor, transform.GetChild(0)).transform.localPosition = pos;
-            yield return null;
-        }
-    }
-    IEnumerator LoadUnit(MapInstance mapInstance)//加载单位
-    {
-        yield return null;//停帧等待初始化
-        if (mapInstance.HasStartDoor && mapInstance.BlueDoor != null)
-        {
-            Vector2Int worldpos = mapInstance.BlueDoor + mapInstance.WorldToLocalOffest;
-            Vector3 pos2 = new Vector3(worldpos.x, worldpos.y, 0);
-            for (int i = 0; i < DataLibrary.Instance.Save.team.roleIds.Length; i++)
-            {
-                int teamid = DataLibrary.Instance.Save.team.roleIds[i];
-                if (teamid != 0)
-                {
-                    RoleData roledata = DataLibrary.Instance.Save.unlockedRoles.Find(x => x.roleId == teamid);
-                    if (roledata == null) { Debug.Log("干员" + teamid + "的存档信息未找到"); continue; }
-                    PoolManage.Instance.GetPoolGameObject("Char", "Player", pos2, Quaternion.identity)
-                        .GetComponent<CharacterBase>().Init(roledata, i == 0);//只有第一个干员会显示，其余在生成时隐藏
-                }
-                yield return null;
-            }
-        }
-        yield return null;//停帧等待初始化
+        yield return null;//停帧等待
         for (int i = 0; i < mapInstance.MapGrids.GetLength(0); i++)
         {
             for (int j = 0; j < mapInstance.MapGrids.GetLength(1); j++)
             {
                 MapTile tile = mapInstance.GetGrid(i, j);
-                if (tile.Monster != null && tile.Monster != "")
+                if (tile.FacilitiesType != IFacilities.FacilitiesType.None && tile.Facilities != null)
                 {
-                    Vector2Int worldpos = new Vector2Int(tile.Row,tile.Col) + mapInstance.WorldToLocalOffest;
-                    Vector3 pos = new Vector3(worldpos.x, worldpos.y, 0);
-                    PoolManage.Instance.GetPoolGameObject("Enemy", "Enemy", pos, Quaternion.identity)
-                .GetComponent<EnemyBase>().Init(tile.Monster);//加载敌人
+                    Vector2Int worldpos = new Vector2Int(tile.Row, tile.Col) + mapInstance.WorldToLocalOffest;
+                    tile.Facilities.Create(worldpos);
                 }
             }
         }
@@ -293,13 +256,10 @@ public class MapManager : Singleton<MapManager>
             MapTile grid = MainmapInstance.GetGrid(LocalNowGrid);
             grid.UnitInGrid = _char.GetComponent<IBlocked>();
             grid.MapGridAction.OnPlayerIn?.Invoke(_char);
-            if (grid.Doors != null)//当前格为门，加载新地图
+            if (grid.FacilitiesType == IFacilities.FacilitiesType.Cross && grid.Facilities != null)//当前格为门，加载新地图
             {
-                foreach(var door in grid.Doors)
-                {
-                    Vector2Int offest = MainmapInstance.WorldOffest + door.MapOffest;
-                    LoadMap(door.TargetMapId, offest);
-                }
+                Vector2Int offest = MainmapInstance.WorldOffest + ((MapTile.Cross)grid.Facilities).MapOffest;
+                LoadMap(((MapTile.Cross)grid.Facilities).TargetMapId, offest);
             }
         }
     }
@@ -468,9 +428,9 @@ public class MapManager : Singleton<MapManager>
             Debug.Log("起点与终点位于两个地图");
             MapTile tile = map1.GetGrid(startPos - map1.WorldToLocalOffest);
             MapTile tile2 = map2.GetGrid(endPos - map2.WorldToLocalOffest);
-            if (tile.Doors?.Count > 0)//起始点是门
+            if (tile.FacilitiesType == IFacilities.FacilitiesType.Cross && tile.Facilities != null)//起始点是门
             {
-                MapTile.Door door = tile.Doors.Find(x => x.TargetMapId == map2.ID);
+                Cross door = (MapTile.Cross)tile.Facilities;
                 if (door != null && door.TargetMapDoorPos == new Vector2Int(tile2.Row,tile2.Col))//终点在门列表中
                 {
                     List<Vector2Int> path2 = new List<Vector2Int>

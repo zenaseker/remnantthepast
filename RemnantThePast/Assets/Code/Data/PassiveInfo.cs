@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 被动信息
+/// </summary>
 [SerializeField]
 public class PassiveInfo
 {
